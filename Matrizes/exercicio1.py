@@ -12,17 +12,11 @@ for a in range(0,n):
         
         mat[a][b] = int(input("digite um número na matriz: "))
 print()
-cont = 0
 diagonal = []
 for a in range(0,n):
-    diagonal.append(mat[a][cont])
-    cont += 1
-    
-        
+    diagonal.append(mat[a][a])
+            
 print("a diagonal principal é: ",diagonal)
-print()
-diagonal = sum(diagonal)
-
 
 print()
 contaneg = 0
