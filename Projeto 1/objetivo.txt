@@ -1,0 +1,41 @@
+Projeto: Gerenciador de Tarefas
+
+Objetivo: Criar um programa que permita ao usuário gerenciar suas tarefas diárias, usando operações de listas para adicionar, remover, editar e visualizar as tarefas.
+
+Funcionalidades:
+
+Adicionar uma nova tarefa: o usuário pode adicionar uma nova tarefa à lista de tarefas.
+Remover uma tarefa: o usuário pode remover uma tarefa existente da lista de tarefas.
+Editar uma tarefa: o usuário pode editar uma tarefa existente na lista de tarefas.
+Visualizar todas as tarefas: o usuário pode visualizar todas as tarefas existentes na lista de tarefas.
+Visualizar tarefas por categoria: o usuário pode visualizar todas as tarefas que pertencem a uma determinada categoria.
+Visualizar tarefas por prazo: o usuário pode visualizar todas as tarefas que devem ser concluídas até uma determinada data.
+
+Passo a passo:
+
+Crie uma lista vazia para armazenar as tarefas.
+Crie um menu que permita ao usuário escolher entre adicionar, remover, editar, visualizar tarefas por categoria, visualizar tarefas por prazo e sair do programa.
+Adicione uma nova tarefa à lista de tarefas:
+a. Solicite ao usuário que digite o nome da tarefa.
+b. Solicite ao usuário que selecione uma categoria para a tarefa.
+c. Solicite ao usuário que digite a data de conclusão da tarefa.
+d. Adicione a nova tarefa à lista de tarefas.
+Remova uma tarefa existente da lista de tarefas:
+a. Solicite ao usuário que selecione a tarefa a ser removida da lista de tarefas.
+b. Remova a tarefa selecionada da lista de tarefas.
+Edite uma tarefa existente na lista de tarefas:
+a. Solicite ao usuário que selecione a tarefa a ser editada na lista de tarefas.
+b. Permita ao usuário editar o nome, a categoria e a data de conclusão da tarefa selecionada.
+c. Atualize a tarefa selecionada na lista de tarefas com as informações editadas pelo usuário.
+Visualize todas as tarefas existentes na lista de tarefas:
+a. Exiba todas as tarefas existentes na lista de tarefas.
+Visualize tarefas por categoria:
+a. Solicite ao usuário que selecione uma categoria.
+b. Exiba todas as tarefas que pertencem à categoria selecionada.
+Visualize tarefas por prazo:
+a. Solicite ao usuário que digite uma data de conclusão.
+b. Exiba todas as tarefas que devem ser concluídas até a data de conclusão selecionada.
+Repita os passos 2 a 8 até que o usuário escolha sair do programa.
+Bônus: Implemente um recurso de salvar e carregar as tarefas em um arquivo CSV para que as tarefas sejam preservadas entre as execuções do programa.
+
+Esse projeto pode ser adaptado e expandido de diversas maneiras, adicionando mais funcionalidades ou melhorando a interface

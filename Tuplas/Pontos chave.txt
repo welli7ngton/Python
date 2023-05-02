@@ -1,0 +1,97 @@
+Pontos chave: tuplas
+1. As tuplas são ordenadas e coleções imutáveis (imutáveis) de dados. Eles podem ser vistos como listas imutáveis. Eles estão escritos entre colchetes:
+
+
+my_tuple = (1, 2, True, "um barbante", (3, 4), [5, 6], None)
+print(my_tuple)
+ 
+my_list = [1, 2, True, "um barbante", (3, 4), [5, 6], None]
+print(my_list)
+ 
+Cada elemento de tupla pode ser de um tipo diferente (ou seja, números inteiros, seqüências de caracteres, booleanos, etc.). Além disso, as tuplas podem conter outras tuplas ou listas (e vice-versa).
+
+2. Você pode criar uma tupla vazia como esta:
+
+
+empty_tuple = ()
+print(type(empty_tuple)) # saídas:
+ 
+3. Uma tupla de um elemento pode ser criada da seguinte forma:
+
+
+one_elem_tuple_1 = ("um", ) # Colchetes e uma vírgula.
+one_elem_tuple_2 = "um", # Sem colchetes, apenas vírgula.
+ 
+Se você remover a vírgula, você dirá ao Python para criar uma variável, não uma tupla:
+
+
+my_tuple_1 = 1,
+print(type(my_tuple_1)) # saídas:
+ 
+my_tuple_2 = 1 # Isso não é uma tupla.
+print(type(my_tuple_2)) # saídas:
+ 
+4. Você pode acessar elementos de tupla indexando-os:
+
+
+my_tuple = (1, 2.0, "corda", [3, 4], (5, ), True)
+print(my_tuple[3]) # saídas: [3, 4]
+ 
+5. As tuplas são imutáveis, o que significa que você não pode alterar seus elementos (não é possível acrescentar tuplas, modificar ou remover elementos de tuplas). O seguinte snippet causará uma exceção:
+
+
+my_tuple = (1, 2.0, "corda", [3, 4], (5, ), True)
+my_tuple[2] = "guitarra" # A exceção TypeError será levantada.
+ 
+No entanto, você pode excluir uma tupla como um todo:
+
+
+my_tuple = 1, 2, 3,
+del my_tuple
+print(my_tuple) # NameError: name 'my_tuple' is not defined
+ 
+6. Você pode percorrer os elementos de uma tupla (exemplo 1), verificar se um elemento específico está (não) presente em uma tupla (exemplo 2), usar a função len() para verificar quantos elementos existem em uma tupla (exemplo 3) , ou até mesmo juntar / multiplicar tuplas (exemplo 4):
+
+
+# Exemplo 1
+tuple_1 = (1, 2, 3)
+for elem in tuple_1:
+    print(elem)
+ 
+# Exemplo 2
+tuple_2 = (1, 2, 3, 4)
+print(5 in tuple_2)
+print(5 not in tuple_2)
+ 
+# Exemplo 3
+tuple_2 = (1, 2, 3, 4)
+print(len(tuple_3))
+print(5 not in tuple_2)
+# Exemplo 4
+tuple_4 = tuple_1 + tuple_2
+tuple_5 = tuple_3 * 2
+ 
+print(tuple_4)
+print(tuple_5)
+ 
+  EXTRA  
+Você também pode criar uma tupla usando uma função interna do Python chamada tuple(). Isso é particularmente útil quando você deseja converter uma certa iterável (por exemplo, uma lista, intervalo, string, etc.) em uma tupla:
+
+
+my_tuple = tuple((1, 2, "corda"))
+print(my_tuple)
+ 
+my_list = [2, 4, 6]
+print(my_list) # saídas: [2, 4, 6]
+print(type(my_list)) # saídas:
+tup = tuple(my_list)
+print(tup) # saídas: (2, 4, 6)
+print(type(tup)) # saídas:
+ 
+Da mesma forma, quando quiser converter um iterável em uma lista, você pode usar uma função interna do Python chamada list():
+
+
+tup = 1, 2, 3,
+my_list = list(tup)
+print(type(my_list)) # saídas:
+ 

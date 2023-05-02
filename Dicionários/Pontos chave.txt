@@ -1,0 +1,131 @@
+Pontos chave: dicionários
+1. Os dicionários são conjuntos de dados indexados *, mutáveis e indexados. (* Desdo Python 3.6x os dicionários passaram a ser ordenados por padrão.)
+
+Cada dicionário é um conjunto de pares chave: valor. Você pode criá-lo usando a seguinte sintaxe:
+
+
+my_dictionary = {
+    key1: value1,
+    key2: value2,
+    key3: value3,
+}
+ 
+2. Se você quiser acessar um item de dicionário, faça isso fazendo uma referência à sua chave dentro de um par de colchetes (por exemplo, 1) ou usando o método get() (por exemplo, 2):
+
+
+pol_eng_dictionary = {
+    "kwiat": "flor",
+    "woda": "água",
+    "gleba": "solo"
+    }
+ 
+item_1 = pol_eng_dictionary["gleba"] # ex. 1
+print(item_1) # saídas: solo
+ 
+item_2 = pol_eng_dictionary.get("woda") # ex. 2
+print(item_2) # saídas: água
+ 
+3. Se você quiser alterar o valor associado a uma chave específica, consulte o nome da chave do item da seguinte forma:
+
+
+pol_eng_dictionary = {
+    "zamek": "castelo",
+    "woda": "água",
+    "gleba": "solo"
+    }
+ 
+pol_eng_dictionary["zamek"] = "trancar"
+item = pol_eng_dictionary["zamek"]
+print(item) # saídas: trancar
+ 
+4. Para adicionar ou remover uma chave (e o valor associado), use a seguinte sintaxe:
+
+
+phonebook = {} # um dicionário vazio
+ 
+phonebook["Adão"] = 3456783958 # criar/adicionar um par chave-valor
+print(phonebook) # saídas: {'Adão': 3456783958}
+ 
+del phonebook["Adão"]
+print(phonebook) # saídas: {}
+ 
+Você também pode inserir um item em um dicionário usando o método update() e remover o último elemento usando o método popitem(), por exemplo:
+
+
+pol_eng_dictionary = {"kwiat": "flor"}
+ 
+pol_eng_dictionary.update({"gleba": "solo"})
+print(pol_eng_dictionary) # saídas: {'kwiat': 'flor', 'gleba': 'solo'}
+ 
+pol_eng_dictionary.popitem()
+print(pol_eng_dictionary) # saídas: {'kwiat': 'flor'}
+ 
+5. Você pode usar o loop for para percorrer um dicionário, por exemplo:
+
+
+pol_eng_dictionary = {
+    "zamek": "castelo",
+    "woda": "água",
+    "gleba": "solo"
+    }
+ 
+for item in pol_eng_dictionary:
+    print(item)
+ 
+#          woda
+#          gleba
+ 
+6. Se você deseja percorrer as chaves e os valores de um dicionário, pode usar o método items(), por exemplo:
+
+
+pol_eng_dictionary = {
+    "zamek": "castelo",
+    "woda": "água",
+    "gleba": "solo"
+    }
+ 
+for key, value in pol_eng_dictionary.items():
+    print("Pol/Eng ->", key, ":", value)
+ 
+7. Para verificar se uma determinada chave existe em um dicionário, você pode usar a palavra-chave in:
+
+
+pol_eng_dictionary = {
+    "zamek": "castelo",
+    "woda": "água",
+    "gleba": "solo"
+    }
+ 
+if "zamek" in pol_eng_dictionary:
+   print("Sim")
+else:
+   print("Não")
+ 
+8. Você pode usar a palavra-chave del para remover um item específico ou excluir um dicionário. Para remover todos os itens do dicionário, você precisa usar o método clear():
+
+
+pol_eng_dictionary = {
+    "zamek": "castelo",
+    "woda": "água",
+    "gleba": "solo"
+    }
+ 
+print(len(pol_eng_dictionary)) # saídas: 3
+del pol_eng_dictionary["zamek"] # remover um item
+print(len(pol_eng_dictionary)) # saídas: 2
+ 
+pol_eng_dictionary.clear() # remove todos os itens
+print(len(pol_eng_dictionary)) # saídas: 0
+ 
+del pol_eng_dictionary # remove o dicionário
+ 
+9. Para copiar um dicionário, use o método copy():
+
+
+pol_eng_dictionary = {
+    "zamek": "castelo",
+    "woda": "água",
+    "gleba": "solo"
+    }
+ 
+copy_dictionary = pol_eng_dictionary.copy()
