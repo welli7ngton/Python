@@ -1,0 +1,5 @@
+The dir() function to you. It has nothing to do with the dir command you know from Windows and Unix consoles, as dir() doesn't show the contents of a disk directory/folder, but there is no denying that it does something really similar - it is able to reveal all the names provided through a particular module.
+
+There is one condition: the module has to have been previously imported as a whole (i.e., using the import module instruction - from module is not enough).
+
+The function returns an alphabetically sorted list containing all entities' names available in the module identified by a name passed to the function as an argument:

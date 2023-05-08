@@ -1,0 +1,27 @@
+Protocolos de internet e suporte:
+https://docs.python.org/pt-br/3/library/internet.html
+
+Acesso a arquivos e diretorios:
+https://docs.python.org/pt-br/3/library/filesys.html
+
+Compressão de dados e arquivamento:
+https://docs.python.org/pt-br/3/library/archiving.html
+
+Formatos de arquivos:
+https://docs.python.org/pt-br/3/library/fileformats.html
+
+Serviços criptográficos:
+https://docs.python.org/pt-br/3/library/crypto.html
+
+Serviços genéricos do oistema operacional:
+https://docs.python.org/pt-br/3/library/allos.html
+
+Comunicação de rede e interprocesso:
+https://docs.python.org/pt-br/3/library/ipc.html
+
+Ferramentas de processamento de markup estruturado:
+https://docs.python.org/pt-br/3/library/markup.html
+
+Considerações de segurança:
+https://docs.python.org/pt-br/3/library/security_warnings.html
+
