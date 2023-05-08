@@ -2,10 +2,7 @@
 #ao chamar polygon com um comprimento e número de lados adequados. Teste a sua função com uma série de valores de r
 
 
-import turtle
 
-def circle(t,r):
-    
 
 
 
