@@ -1,0 +1,17 @@
+Plano de Estudo
+
+1- Classes e objetos: o conceito fundamental da POO, essenciais para criar e gerenciar objetos em um sistema web.
+
+2- Encapsulamento: a prática de esconder informações dentro de uma classe e fornecer uma interface pública para acessá-las, protegendo o código de alterações indesejadas.
+
+3- Herança: a capacidade de criar novas classes a partir de classes existentes, herdando suas propriedades e comportamentos.
+
+4- Polimorfismo: a capacidade de usar uma classe de várias formas diferentes, permitindo que diferentes objetos respondam de maneira diferente às mesmas mensagens.
+
+5- Abstração: a habilidade de modelar objetos do mundo real em termos de suas propriedades essenciais, criando classes abstratas que podem ser usadas como modelos para classes mais específicas.
+
+6 -Interfaces: a definição de contratos que especificam quais métodos uma classe deve implementar para se comportar de determinada maneira, permitindo a criação de objetos polimórficos que podem ser usados de maneira genérica em um sistema web.
+
+7- Design patterns: soluções comuns para problemas de design de software, que podem ser aplicados em diferentes projetos de desenvolvimento web, como o padrão Model-View-Controller (MVC) e o padrão de Injeção de Dependência (DI).
+
+8- Frameworks: estruturas de código que fornecem uma estrutura pré-definida para criar aplicativos web com POO, como o Django, Flask e Pyramid.
