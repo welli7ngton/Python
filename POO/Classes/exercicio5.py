@@ -15,27 +15,26 @@ class horario:
 
         self.segundos = segundos
 
-        hora = self.segundos // 3600
-        resto = self.segundos % 3600
-        minutos = resto // 60
+        hora = self.hora + (self.segundo + segundos) // 3600
+        resto = (self.segundo + segundos) % 3600
+        minutos = self.minuto + resto // 60
         seg = resto % 60
 
         print(f"{int(hora + self.hora)}:{int(minutos + self.minuto)}:{int(seg + self.segundo)}")
 
     def diferenca(self,horario2):
-        tseg = self.segundo - horario2.segundo
-        tmin = self.minuto - horario2.minuto
-        thora = self.hora - horario2.hora
+        segundos1 = self.hora * 3600 + self.minuto * 60 + self.segundo
+        segundos2 = horario2.hora * 3600 + horario2.minuto * 60 + horario2.segundo
 
-        if tseg < 0:
-            tseg += 60
-            tmin -= 1
-        if tmin < 0:
-            tmin += 60
-            thora -= 1
-        if thora < 0:
-            thora += 24
+        diferenca = segundos2 - segundos1
 
-        print(f"a diferenca entre as horas é: {int(tseg)}:{int(tmin)}:{int(thora)}")
+        difhora = abs(diferenca)//3600
+        difresto = abs(diferenca)%3600
+        difmin = difresto//60
+        difseg = difresto%60
+
+        print(f"a diferença entre horários é: {difhora}:{difmin}:{difseg}")
+
+        
 
 

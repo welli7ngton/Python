@@ -1,8 +1,8 @@
 from exercicio5 import horario
 
 
-h1 = horario(10, 0, 0)
+h1 = horario(12, 0, 0)
 
-h2 = horario(9, 15, 30)
+h2 = horario(24, 0, 0)
 
 h1.diferenca(h2)
