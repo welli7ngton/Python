@@ -2,14 +2,14 @@
 # cadastrar eles em uma lista que separe os numeros pares de impares
 # no final mostrar os valores pares e impares em ordem crescente
 
-'''                JEITO FÁCIL
+'''               JEITO 1
 num = []
 pares = []
 impares = []
 
 for a in range(0, 7):
 
-    n = int(input(f"digite 0 {a}o valor: "))
+    n = int(input(f"digite o {a+1}° valor: "))
     if n %2 == 0:
         pares.append(n)
     else:
@@ -24,7 +24,7 @@ print(f"os valores pares foram {num[0]}")
 print(f"os valores impares foram {num[1]}")'''
 
 
-#                  JEITO MAIS COMPLICADO UMA COISINHA
+#                  JEITO 2
 
 num = []
 pares = []
@@ -35,7 +35,7 @@ num.append(impares)
 
 for a in range(0,7):
 
-    n = int(input(f"digite 0 {a + 1}o valor: "))
+    n = int(input(f"digite o {a + 1}° valor: "))
     if n %2 == 0:
         pares.append(n)
     else:
@@ -44,4 +44,3 @@ for a in range(0,7):
 print(f"os valores pares foram: {num[0]}")
 
 print(f"os valores impares foram: {num[1]}")
-

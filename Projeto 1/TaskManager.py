@@ -13,19 +13,19 @@ print(f"    A sua lista poderá amrazenar {tamanho_categorias} categorias.")
 
 categorias = []
 
-for a in range(0, tamanho_categorias):
-    categorias += "0"
+#for a in range(0, tamanho_categorias):
+    #categorias += "0"
 
-print()
+#print()
 
 print("Digite quais categorias você quer adicionar.")
 print("    Ex: Trabalho, Lazer, Estudo")
 
 nomes_categorias = ''
 
-for a in range(0, len(categorias)):
+for a in range(0, tamanho_categorias):
     nomes_categorias = input()
-    categorias[a] = nomes_categorias
+    categorias.append(nomes_categorias)
 
 print(f"    Estas são as suas categorias de atividade: {categorias}")
 
