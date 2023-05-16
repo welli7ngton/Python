@@ -1,0 +1,4 @@
+atividade:
+https://www.math.tecnico.ulisboa.pt/~ccal/python/ex02.html
+explicação:
+http://www.vision.ime.usp.br/~pmiranda/mac2166_1s17/aulas/P3/aulas_P3.html#:~:text=Uma%20fun%C3%A7%C3%A3o%20%C3%A9%20dita%20recursiva,de%20tamanho%20maior%20(conquista).

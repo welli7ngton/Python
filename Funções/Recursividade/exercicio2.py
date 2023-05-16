@@ -11,9 +11,6 @@ def div(m,n):
         return 1 + div(m - n, n)
     
 
-
-
-
-a =  div(3,4)
+a =  div(6,2)
 
 print(a)
