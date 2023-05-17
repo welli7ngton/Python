@@ -1,0 +1,229 @@
+                                                SUMMARY
+
+                        1. Some of the methods offered by strings are:
+
+                        capitalize() – changes all string letters to capitals;
+                        center() – centers the string inside the field of a known length;
+                        count() – counts the occurrences of a given character;
+                        join() – joins all items of a tuple/list into one string;
+                        lower() – converts all the string's letters into lower-case letters;
+                        lstrip() – removes the white characters from the beginning of the string;
+                        replace() – replaces a given substring with another;
+                        rfind() – finds a substring starting from the end of the string;
+                        rstrip() – removes the trailing white spaces from the end of the string;
+                        split() – splits the string into a substring using a given delimiter;
+                        strip() – removes the leading and trailing white spaces;
+                        swapcase() – swaps the letters' cases (lower to upper and vice versa)
+                        title() – makes the first letter in each word upper-case;
+                        upper() – converts all the string's letter into upper-case letters.
+
+                        2. String content can be determined using the following methods (all of them return Boolean values):
+
+                        endswith() – does the string end with a given substring?
+                        isalnum() – does the string consist only of letters and digits?
+                        isalpha() – does the string consist only of letters?
+                        islower() – does the string consists only of lower-case letters?
+                        isspace() – does the string consists only of white spaces?
+                        isupper() – does the string consists only of upper-case letters?
+                        startswith() – does the string begin with a given substring?
+
+
+
+
+
+
+
+The isalnum() method:
+The parameterless method named isalnum() checks if the string contains only digits or alphabetical characters (letters), and returns True or False according to the result.
+
+# Demonstrating the isalnum() method:
+    print('lambda30'.isalnum())    True
+    print('lambda'.isalnum())      True
+    print('30'.isalnum())          True
+    print('@'.isalnum())           False
+    print('lambda_30'.isalnum())   False
+    print(''.isalnum())            False
+
+The isalpha() method:
+The isalpha() method is more specialized – it's interested in letters only.
+
+    # Example 1: Demonstrating the isapha() method:
+    print("Moooo".isalpha())       True
+    print('Mu40'.isalpha())        False
+
+The isdigit() method:
+In turn, the isdigit() method looks at digits only – anything else produces False as the result.
+
+    # Example 2: Demonstrating the isdigit() method:
+    print('2018'.isdigit())        True
+    print("Year2019".isdigit())    False
+
+The islower() method:
+The islower() method is a fussy variant of isalpha() – it accepts lower-case letters only.
+
+    # Example: Demonstrating the islower() method:
+    print("Moooo".islower())       False
+    print('moooo'.islower())       True
+
+The isspace() method:
+The isspace() method identifies whitespaces only – it disregards any other character (the result is False then).
+
+    # Example: Demonstrating the isspace() method:
+    print(' \n '.isspace())        True
+    print(" ".isspace())           True
+    print("moo mo mo".isspace())   False
+
+The isupper() method:
+The isupper() method is the upper-case version of islower() – it concentrates on upper-case letters only.
+
+    # Example: Demonstrating the isupper() method:
+    print("Moooo".isupper())       False
+    print('moooo'.isupper())       False
+    print('MOOOO'.isupper())       True
+
+The join() method:
+The join() method is rather complicated, so let us guide you through it step by step:
+As its name suggests, the method performs a join – it expects one argument as a list;
+it must be assured that all the list's elements are strings – the method will raise a TypeError exception otherwise;
+All the list's elements will be joined into one string but...
+...the string from which the method has been invoked is used as a separator, put among the strings;
+The newly created string is returned as a result.
+
+    # Demonstrating the join() method:
+    print(",".join(["omicron", "pi", "rho"]))
+
+    the join() method is invoked from within a string containing a comma (the string can be arbitrarily long, or it can be empty)
+    the join's argument is a list containing three strings;
+    the method returns a new string.
+
+    result:
+        omicron,pi,rho
+
+The lower() method:
+The lower() method makes a copy of a source string, replaces all upper-case letters with their lower-case counterparts, and returns the string as the result. Again, the source string remains untouched.
+
+If the string doesn't contain any upper-case characters, the method returns the original string.
+
+Note: The lower() method doesn't take any parameters.
+
+    # Demonstrating the lower() method:
+    print("SiGmA=60".lower())
+
+    result:
+        sigma=60
+
+The lstrip() method:
+The parameterless version of the lstrip() method returns a newly created string formed from the original one by removing all leading whitespaces.
+
+    # Demonstrating the lstrip() method:
+    print("[" + " tau ".lstrip() + "]")
+
+    result:
+        [tau ]
+
+The one-parameter version of the lstrip() method does the same as its parameterless version, but removes all characters enlisted in its argument (a string), not just whitespaces:
+
+    # Demonstrating the lstrip("parameter") method:
+    print("www.cisco.com".lstrip("w."))
+
+    result:
+        cisco.com
+
+
+The rstrip() method:
+Two variants of the rstrip() method do nearly the same as lstrips, but affect the opposite side of the string.
+
+    # Demonstrating the rstrip() method:
+    print("[" + " upsilon ".rstrip() + "]")
+    print("cisco.com".rstrip(".com"))
+
+    result:
+        [ upsilon]
+        cis
+
+The replace() method:
+The two-parameter replace() method returns a copy of the original string in which all occurrences of the first argument have been replaced by the second argument.
+
+    # Demonstrating the replace() method:
+    print("www.netacad.com".replace("netacad.com", "pythoninstitute.org"))
+    print("This is it!".replace("is", "are"))
+    print("Apple juice".replace("juice", ""))
+    
+    result:
+        www.pythoninstitute.org
+        Thare are it!
+        Apple
+
+The rfind() method:
+The one-, two-, and three-parameter versions of the rfind() method do nearly the same things as their counterparts 
+(the ones devoid of the r prefix), but start their searches from the end of the string, not the beginning (hence 
+the prefix r, for right).
+
+    # Demonstrating the rfind() method:
+    print("tau tau tau".rfind("ta"))
+    print("tau tau tau".rfind("ta", 9))
+    print("tau tau tau".rfind("ta", 3, 9))
+
+    result:
+        8
+        -1
+        4
+
+The split() method:
+The split() method does what it says – it splits the string and builds a list of all detected substrings.
+
+The method assumes that the substrings are delimited by whitespaces – the spaces don't take part in the operation, and aren't copied into the resulting list.
+
+If the string is empty, the resulting list is empty too.
+
+    # Demonstrating the split() method:
+    print("phi       chi\npsi".split())
+
+    result:
+        ['phi', 'chi', 'psi']
+
+The strip() method:
+The strip() method combines the effects caused by rstrip() and lstrip() – it makes a new string lacking all the leading and trailing whitespaces.
+
+    # Demonstrating the strip() method:
+    print("[" + "   aleph   ".strip() + "]")
+
+    result:
+        [aleph]
+
+The swapcase() method:
+The swapcase() method makes a new string by swapping the cases of all letters within the source string: lower-case characters become upper-case, and vice versa.
+
+All other characters remain untouched.
+
+    # Demonstrating the swapcase() method:
+    print("I know that I know nothing.".swapcase())
+
+    print()
+
+    result:
+        "i KNOW THAT i KNOW NOTHING."
+
+The title() method:
+The title() method performs a somewhat similar function – it changes every word's first letter to upper-case, turning all other ones to lower-case.
+
+    # Demonstrating the title() method:
+    print("i know that i know nothing. part 1.".title())
+
+    print()
+
+    result:
+        "I Know That I Know Nothing. Part 1."
+
+The upper() method:
+Last but not least, the upper() method makes a copy of the source string, replaces all lower-case letters with their upper-case counterparts, and returns the string as the result.
+
+    # Demonstrating the upper() method:
+    print("I know that I know nothing. Part 2.".upper())
+
+    result:
+        "I KNOW THAT I KNOW NOTHING. PART 2."
+
+
+
+
