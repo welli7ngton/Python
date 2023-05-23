@@ -15,4 +15,4 @@ def negpos(lista, pos=0, dif=0, posi=0, neg=0):
     dif += posi - neg
     return negpos(lista, pos, dif)
 
-print(negpos([1,-1]))
+print(negpos([1,2,3,-1]))
