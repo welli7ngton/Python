@@ -10,7 +10,7 @@ while True:
     if letra in palavra:
         for a in range(len(palavra)):
             if palavra[a] == letra:
-                print(p[a].replace("_", letra))
-                
+                p = p.replace(p[a], letra)
+                print(p)
                 break
     
