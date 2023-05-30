@@ -21,8 +21,8 @@ contrário disso:
 O primeiro dígito do CPF é 7
 """
 
-cpf = "746.824.890-70"
-
+cpf = "777.710.600-72"
+print("CPF:", cpf)
 cpf = cpf.replace(".", "")
 cpf = cpf.replace("-", "")
 cpf = cpf[:9]
@@ -41,3 +41,19 @@ resultado = 0 if resto > 9 else resto
 
 print("O primeiro dígito do CPF é", resultado)
 
+cpf = cpf + str(resultado)
+
+mult = 11
+somas2 = 0
+
+for digito in cpf:
+    
+    somas2 += int(digito) * mult
+    mult -= 1
+
+somas2 *= 10
+resto2 = somas2 % 11
+
+resultado2 = resto2 if resto2 <= 9 else 0
+
+print("O segundo dígito do CPF é", resultado2)
