@@ -4,13 +4,11 @@
 
 3 - Crie uma função chamada calculate_power que recebe um número x e retorna uma função interna. A função interna deve receber um número n e retornar x elevado a n. Teste a função retornada para calcular potências.
 
-Escreva uma função chamada make_multiplier_of que recebe um número x e retorna uma função interna. A função interna deve receber um número n e retornar o resultado da multiplicação entre x e n. Teste a função retornada para multiplicar diferentes números por um valor fixo.
+4 - Escreva uma função chamada make_multiplier_of que recebe um número x e retorna uma função interna. A função interna deve receber um número n e retornar o resultado da multiplicação entre x e n. Teste a função retornada para multiplicar diferentes números por um valor fixo.
 
-Crie uma função chamada make_adder que recebe um número x e retorna uma função interna. A função interna deve receber um número n e retornar a soma de x e n. Teste a função retornada para somar diferentes números a um valor fixo.
+5 - Crie uma função chamada make_adder que recebe um número x e retorna uma função interna. A função interna deve receber um número n e retornar a soma de x e n. Teste a função retornada para somar diferentes números a um valor fixo.
 
-Crie uma função chamada make_incrementer que retorna uma função interna. A função interna deve aumentar o valor de um contador toda vez que é chamada e retornar o valor atualizado. Teste a função retornada para ver se ela incrementa corretamente.
-
-Escreva uma função chamada make_multiplier_sequence que recebe uma lista de números como argumento e retorna uma função interna. A função interna deve iterar pela lista e multiplicar cada elemento pelo número fornecido. Teste a função retornada para multiplicar todos os números da lista por um valor específico.
+6 - Escreva uma função chamada make_multiplier_sequence que recebe uma lista de números como argumento e retorna uma função interna. A função interna deve iterar pela lista e multiplicar cada elemento pelo número fornecido. Teste a função retornada para multiplicar todos os números da lista por um valor específico.
 
 Crie uma função chamada make_concatenator que recebe uma string inicial e retorna uma função interna. A função interna deve receber uma nova string e concatená-la à string inicial. Teste a função retornada para criar uma sequência de strings concatenadas.
 
