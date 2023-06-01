@@ -10,11 +10,9 @@
 
 6 - Escreva uma função chamada make_multiplier_sequence que recebe uma lista de números como argumento e retorna uma função interna. A função interna deve iterar pela lista e multiplicar cada elemento pelo número fornecido. Teste a função retornada para multiplicar todos os números da lista por um valor específico.
 
-Crie uma função chamada make_concatenator que recebe uma string inicial e retorna uma função interna. A função interna deve receber uma nova string e concatená-la à string inicial. Teste a função retornada para criar uma sequência de strings concatenadas.
+7 - Crie uma função chamada make_concatenator que recebe uma string inicial e retorna uma função interna. A função interna deve receber uma nova string e concatená-la à string inicial. Teste a função retornada para criar uma sequência de strings concatenadas.
 
-Escreva uma função chamada make_filter que recebe um predicado (ou função de teste) e retorna uma função interna. A função interna deve receber uma lista e filtrá-la de acordo com o predicado fornecido. Teste a função retornada para filtrar uma lista com base em diferentes critérios.
-
-Crie uma função chamada make_cache que retorna uma função interna. A função interna deve armazenar em cache os resultados de chamadas anteriores e retornar o resultado armazenado se a mesma entrada for fornecida novamente. Teste a função retornada para evitar cálculos repetidos.
+8 - Crie uma função chamada make_cache que retorna uma função interna. A função interna deve armazenar em cache os resultados de chamadas anteriores e retornar o resultado armazenado se a mesma entrada for fornecida novamente. Teste a função retornada para evitar cálculos repetidos.
 
 Escreva uma função chamada make_timer que retorna uma função interna. A função interna deve calcular o tempo decorrido desde a primeira chamada e retornar o resultado. Teste a função retornada para medir o tempo de execução de diferentes partes do seu código.
 
