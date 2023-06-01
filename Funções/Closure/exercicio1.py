@@ -1,14 +1,12 @@
-# crie uma função que duplica, triplica e quadriplica um numero que é dado como argumento de função usando closure
+# Crie uma função chamada multiply_by que recebe um número x e retorna uma função interna que multiplica qualquer 
+# número dado por x. Teste a função retornada para multiplicar um número qualquer.
 
-def fun(x):
+def multiply_by(x):
     def mult(y):
         return x * y
+    
     return mult
 
-duplica = fun(2)
-triplica = fun(3)
-quadriplica = fun(4)
+a = multiply_by(2)
 
-print(duplica(2))
-print(triplica(2))
-print(quadriplica(2))
+print(a(3))
