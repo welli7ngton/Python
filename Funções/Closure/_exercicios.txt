@@ -14,13 +14,13 @@
 
 8 - Crie uma função chamada make_cache que retorna uma função interna. A função interna deve armazenar em cache os resultados de chamadas anteriores e retornar o resultado armazenado se a mesma entrada for fornecida novamente. Teste a função retornada para evitar cálculos repetidos.
 
-Escreva uma função chamada make_timer que retorna uma função interna. A função interna deve calcular o tempo decorrido desde a primeira chamada e retornar o resultado. Teste a função retornada para medir o tempo de execução de diferentes partes do seu código.
+9 - Escreva uma função chamada make_timer que retorna uma função interna. A função interna deve calcular o tempo decorrido desde a primeira chamada e retornar o resultado. Teste a função retornada para medir o tempo de execução de diferentes partes do seu código.
 
-Crie uma função chamada make_password_checker que recebe uma senha como argumento e retorna uma função interna. A função interna deve receber uma senha fornecida pelo usuário e verificar se ela corresponde à senha original. Teste a função retornada para verificar se as senhas estão corretas.
+10 - Crie uma função chamada make_password_checker que recebe uma senha como argumento e retorna uma função interna. A função interna deve receber uma senha fornecida pelo usuário e verificar se ela corresponde à senha original. Teste a função retornada para verificar se as senhas estão corretas.
 
-Escreva uma função chamada make_average_counter que retorna uma função interna. A função interna deve receber um número como argumento e calcular a média dos números fornecidos até o momento, além de contar quantos números foram fornecidos. Teste a função retornada para calcular a média e contar os números corretamente.
+11 - Escreva uma função chamada make_average_counter que retorna uma função interna. A função interna deve receber um número como argumento e calcular a média dos números fornecidos até o momento, além de contar quantos números foram fornecidos. Teste a função retornada para calcular a média e contar os números corretamente.
 
-Crie uma função chamada make_exponentiator que recebe um número x como argumento e retorna uma função interna. A função interna deve receber um número n e retornar x elevado à potência n. Teste a função retornada para calcular diferentes potências.
+12 - Crie uma função chamada make_exponentiator que recebe um número x como argumento e retorna uma função interna. A função interna deve receber um número n e retornar x elevado à potência n. Teste a função retornada para calcular diferentes potências.
 
 Escreva uma função chamada make_repeater que recebe uma string como argumento e retorna uma função interna. A função interna deve receber um número n e repetir a string fornecida n vezes, separadas por espaços. Teste a função retornada para repetir uma string um determinado número de vezes.
 

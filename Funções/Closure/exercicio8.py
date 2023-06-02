@@ -2,12 +2,11 @@
 # resultados de chamadas anteriores e retornar o resultado armazenado se a mesma entrada for fornecida 
 # novamente. Teste a função retornada para evitar cálculos repetidos.
 
-def make_cache():
+def make_cache(cache =  []):
 
-    cache =  []
     def salvo(novo_valor):
         
-        nonlocal cache
+        
         cache.append(novo_valor)
 
         return cache

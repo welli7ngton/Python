@@ -14,10 +14,9 @@ import time
 # tempo_decorrido = float(tempo_decorrido)
 # print(f"Tempo decorrido:", {tempo_decorrido}, "segundos")
 
-def make_timer():
-    inicio = fim = 0
-    def contador():
-        nonlocal fim, inicio
+def make_timer(inicio=0, fim=0):
+    
+    def contador():       
         fim = time.perf_counter()
         tempo = fim - inicio
         return  tempo
@@ -25,24 +24,18 @@ def make_timer():
     return contador
 
 r = make_timer()
-
 for a in range(2):
     time.sleep(2)
-
 print(r())
 
 r = make_timer()
-
 for a in range(3):
     time.sleep(3)
-
 print(r())
 
 r = make_timer()
-
 for a in range(5):
     time.sleep(1)
-
 print(r())
 
 # Saídas:
