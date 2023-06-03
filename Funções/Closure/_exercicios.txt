@@ -22,24 +22,22 @@
 
 12 - Crie uma função chamada make_exponentiator que recebe um número x como argumento e retorna uma função interna. A função interna deve receber um número n e retornar x elevado à potência n. Teste a função retornada para calcular diferentes potências.
 
-Escreva uma função chamada make_repeater que recebe uma string como argumento e retorna uma função interna. A função interna deve receber um número n e repetir a string fornecida n vezes, separadas por espaços. Teste a função retornada para repetir uma string um determinado número de vezes.
+13 - Escreva uma função chamada make_repeater que recebe uma string como argumento e retorna uma função interna. A função interna deve receber um número n e repetir a string fornecida n vezes, separadas por espaços. Teste a função retornada para repetir uma string um determinado número de vezes.
 
-Crie uma função chamada make_calculator que retorna uma função interna. A função interna deve receber dois números e um operador (como uma string) e retornar o resultado da operação matemática. Teste a função retornada para realizar diferentes operações matemáticas.
+14 - Crie uma função chamada make_calculator que retorna uma função interna. A função interna deve receber dois números e um operador (como uma string) e retornar o resultado da operação matemática. Teste a função retornada para realizar diferentes operações matemáticas.
 
-Escreva uma função chamada make_logger que recebe um prefixo de log como argumento e retorna uma função interna. A função interna deve receber uma mensagem como argumento e imprimir a mensagem junto com o prefixo de log. Teste a função retornada para registrar diferentes mensagens com o prefixo correto.
+15 - Escreva uma função chamada make_logger que recebe um prefixo de log como argumento e retorna uma função interna. A função interna deve receber uma mensagem como argumento e imprimir a mensagem junto com o prefixo de log. Teste a função retornada para registrar diferentes mensagens com o prefixo correto.
 
-Crie uma função chamada make_sequence_generator que recebe uma lista como argumento e retorna uma função interna. A função interna deve iterar pela lista e retornar o próximo elemento da sequência a cada chamada. Teste a função retornada para gerar diferentes sequências a partir da lista.
+16 - Crie uma função chamada make_sequence_generator que recebe uma lista como argumento e retorna uma função interna. A função interna deve iterar pela lista e retornar o próximo elemento da sequência a cada chamada. Teste a função retornada para gerar diferentes sequências a partir da lista.
 
-Escreva uma função chamada make_counter que retorna uma função interna. A função interna deve manter uma contagem interna que é incrementada toda vez que é chamada e retornar o valor da contagem atual. Teste a função retornada para ver se ela conta corretamente.
+17 - Crie uma função chamada make_string_formatter que recebe um formato de string como argumento e retorna uma função interna. A função interna deve receber os valores a serem formatados e retornar a string formatada. Teste a função retornada para formatar diferentes strings com os valores corretos.
 
-Crie uma função chamada make_string_formatter que recebe um formato de string como argumento e retorna uma função interna. A função interna deve receber os valores a serem formatados e retornar a string formatada. Teste a função retornada para formatar diferentes strings com os valores corretos.
+18 - Escreva uma função chamada make_multiplier_sequence que recebe uma lista de números como argumento e retorna uma função interna. A função interna deve multiplicar cada elemento da lista pelo número fornecido e retornar a lista resultante. Teste a função retornada para gerar sequências multiplicadas.
 
-Escreva uma função chamada make_multiplier_sequence que recebe uma lista de números como argumento e retorna uma função interna. A função interna deve multiplicar cada elemento da lista pelo número fornecido e retornar a lista resultante. Teste a função retornada para gerar sequências multiplicadas.
+19 - Crie uma função chamada make_positive_filter que retorna uma função interna. A função interna deve receber uma lista e filtrar apenas os números positivos. Teste a função retornada para filtrar listas com diferentes números.
 
-Crie uma função chamada make_positive_filter que retorna uma função interna. A função interna deve receber uma lista e filtrar apenas os números positivos. Teste a função retornada para filtrar listas com diferentes números.
+20 - Escreva uma função chamada make_name_generator que recebe um nome como argumento e retorna uma função interna. A função interna deve receber um sobrenome e retornar o nome completo concatenado. Teste a função retornada para gerar diferentes nomes completos.
 
-Escreva uma função chamada make_name_generator que recebe um nome como argumento e retorna uma função interna. A função interna deve receber um sobrenome e retornar o nome completo concatenado. Teste a função retornada para gerar diferentes nomes completos.
+21 - Crie uma função chamada make_average_calculator que retorna uma função interna. A função interna deve receber uma lista de números e calcular a média deles. Teste a função retornada para calcular a média de diferentes listas de números.
 
-Crie uma função chamada make_average_calculator que retorna uma função interna. A função interna deve receber uma lista de números e calcular a média deles. Teste a função retornada para calcular a média de diferentes listas de números.
-
-Escreva uma função chamada make_password_validator que recebe uma senha como argumento e retorna uma função interna. A função interna deve receber uma senha fornecida pelo usuário e retornar se ela corresponde ou não à senha original. Teste a função retornada para validar diferentes senhas.
+22 - Escreva uma função chamada make_password_validator que recebe uma senha como argumento e retorna uma função interna. A função interna deve receber uma senha fornecida pelo usuário e retornar se ela corresponde ou não à senha original. Teste a função retornada para validar diferentes senhas.

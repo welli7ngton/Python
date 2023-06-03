@@ -5,8 +5,7 @@
 def make_cache(cache =  []):
 
     def salvo(novo_valor):
-        
-        
+                
         cache.append(novo_valor)
 
         return cache
