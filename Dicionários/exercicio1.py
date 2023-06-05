@@ -17,21 +17,22 @@ perguntas = [
     },
 ]
 pontuacao = 0
-for dic in perguntas:
-    for chave in dic:        
+for dicionario in perguntas:
+    for chave in dicionario:        
         if chave == "Resposta":
             break
         if chave == "Opções":
             
-            for a in range(len(dic[chave])):
-                print(f"{a}) {dic[chave][a]}")
+            for a in range(len(dicionario[chave])):
+                print(f"{a}) {dicionario[chave][a]}")
                 
         if chave == "Pergunta":
-            print(dic[chave])
+            print(dicionario[chave])
     r = int(input("Digite sua resposta: "))
 
-    if dic["Opções"][r] == dic["Resposta"]:
+    if dicionario["Opções"][r] == dicionario["Resposta"]:
         pontuacao += 1
         print("Resposta correta!")
     else:
         print("Resposta incorreta")
+print(f"Sua pontuação foi {pontuacao} de 3.")
