@@ -1,0 +1,30 @@
+1-Escreva uma expressão lambda que retorne o dobro de um número.
+2-Escreva uma expressão lambda que calcule o quadrado de um número.
+3-Escreva uma expressão lambda que verifique se um número é par.
+4-Escreva uma expressão lambda que verifique se um número é ímpar.
+5-Escreva uma expressão lambda que retorne o valor absoluto de um número.
+6-Escreva uma expressão lambda que verifique se uma string é um palíndromo.
+7-Escreva uma expressão lambda que verifique se uma palavra começa com uma determinada letra.
+8-Escreva uma expressão lambda que verifique se um número é positivo.
+9-Escreva uma expressão lambda que verifique se um número é negativo.
+10-Escreva uma expressão lambda que retorne o maior de dois números.
+11-Escreva uma expressão lambda que retorne o menor de dois números.
+12-Escreva uma expressão lambda que calcule o produto de dois números.
+13-Escreva uma expressão lambda que verifique se um número é primo.
+14-Escreva uma expressão lambda que retorne a raiz quadrada de um número.
+15-Escreva uma expressão lambda que verifique se uma lista está vazia.
+16-Escreva uma expressão lambda que retorne a soma dos elementos de uma lista.
+17-Escreva uma expressão lambda que retorne a média dos elementos de uma lista.
+18-Escreva uma expressão lambda que conte o número de ocorrências de um determinado elemento em uma lista.
+19-Escreva uma expressão lambda que filtre os números pares de uma lista.
+20-Escreva uma expressão lambda que filtre os números ímpares de uma lista.
+21-Escreva uma expressão lambda que filtre os números positivos de uma lista.
+22-Escreva uma expressão lambda que filtre os números negativos de uma lista.
+23-Escreva uma expressão lambda que converta todos os elementos de uma lista para letras maiúsculas.
+24-Escreva uma expressão lambda que ordene uma lista em ordem crescente.
+25-Escreva uma expressão lambda que ordene uma lista em ordem decrescente.
+26-Escreva uma expressão lambda que concatene duas strings.
+27-Escreva uma expressão lambda que retorne o comprimento de uma string.
+28-Escreva uma expressão lambda que verifique se uma lista contém apenas números.
+29-Escreva uma expressão lambda que retorne o último elemento de uma lista.
+30-Escreva uma expressão lambda que inverta uma string.

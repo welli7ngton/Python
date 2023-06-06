@@ -1,0 +1,24 @@
+Escreva uma expressão lambda que retorne uma lista contendo apenas os números primos de uma lista dada.
+Escreva uma expressão lambda que calcule a soma dos quadrados dos números positivos de uma lista.
+Escreva uma expressão lambda que retorne o valor máximo de uma lista de dicionários com base em uma determinada chave.
+Escreva uma expressão lambda que encontre o número de caracteres em cada palavra de uma string e retorne uma lista com esses valores.
+Escreva uma expressão lambda que retorne a lista de palavras em ordem alfabética reversa de uma string.
+Escreva uma expressão lambda que verifique se todos os elementos de uma lista são múltiplos de um número dado.
+Escreva uma expressão lambda que retorne uma lista contendo os elementos únicos de duas listas dadas.
+Escreva uma expressão lambda que calcule a média dos valores de uma chave específica em uma lista de dicionários.
+Escreva uma expressão lambda que retorne uma lista contendo os elementos de uma lista original que são maiores do que a média da lista.
+Escreva uma expressão lambda que verifique se uma string é um anagrama de outra string.
+
+
+Escreva uma expressão lambda que encontre o maior número primo em uma lista.
+Escreva uma expressão lambda que calcule a soma dos elementos de uma matriz (lista de listas).
+Escreva uma expressão lambda que retorne uma lista com as palavras mais longas de uma string.
+Escreva uma expressão lambda que ordene uma lista de dicionários com base em várias chaves em ordem crescente.
+Escreva uma expressão lambda que retorne uma lista contendo as combinações possíveis de elementos de duas listas.
+Escreva uma expressão lambda que retorne uma lista de dicionários contendo o nome e a idade dos maiores de idade de
+ uma lista de pessoas.
+Escreva uma expressão lambda que retorne uma lista contendo os n primeiros números da sequência de Fibonacci.
+Escreva uma expressão lambda que verifique se todos os elementos de uma lista de listas são números positivos.
+Escreva uma expressão lambda que calcule o produto escalar de duas listas numéricas.
+Escreva uma expressão lambda que retorne uma lista com as palavras mais frequentes em um texto, excluindo palavras
+ comuns como artigos e preposições.
