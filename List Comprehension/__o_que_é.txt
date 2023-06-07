@@ -1,0 +1,29 @@
+List comprehension é uma construção sintática do Python que permite criar listas de forma concisa e elegante a partir
+de sequências existentes, como listas, strings, dicionários, entre outros. É uma maneira poderosa de realizar operações
+de filtragem, mapeamento e geração de novas listas de forma eficiente.
+
+A estrutura básica de uma list comprehension é composta por colchetes [] que envolvem uma expressão, seguida de uma
+cláusula "for" ou "for" aninhada, e opcionalmente uma ou mais cláusulas "if". Essa estrutura geralmente é seguida da
+leitura de uma sequência ou iterável.
+
+A sintaxe geral de uma list comprehension é a seguinte:
+
+	nova_lista = [expressão for elemento in sequência if condição]
+
+A expressão é aplicada a cada elemento da sequência, e o resultado é adicionado à nova lista.
+A cláusula "for" especifica a variável de iteração (elemento) e a sequência que será percorrida.
+A cláusula "if" é opcional e permite filtrar os elementos da sequência com base em uma condição.
+
+A list comprehension é uma forma mais concisa e legível de criar listas em comparação com abordagens tradicionais
+como loops "for" e "append". Ela permite combinar filtragem e transformação de elementos em uma única expressão
+resultando em um código mais claro e sucinto.
+
+Exemplo de list comprehension:
+
+	numeros = [1, 2, 3, 4, 5]
+	dobro = [2 * num for num in numeros if num % 2 == 0]
+
+	# Saída: [4, 8]
+
+Neste exemplo, a list comprehension cria uma nova lista chamada "dobro" contendo o dobro de cada número par da 
+lista "numeros". A condição if num % 2 == 0 filtra apenas os números pares.

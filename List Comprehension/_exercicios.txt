@@ -1,0 +1,35 @@
+Fáceis:
+Crie uma lista com os quadrados dos números de 1 a 10 usando list comprehension.
+Dada uma lista de números, filtre os números pares usando list comprehension.
+Dada uma lista de palavras, crie uma nova lista com as palavras que têm mais de 5 letras usando list comprehension.
+Dada uma lista de strings, crie uma nova lista com as strings convertidas para maiúsculas usando list comprehension.
+Dada uma lista de números, crie uma nova lista com os números negativos multiplicados por 2 e os positivos divididos por 2 usando list comprehension.
+Dada uma lista de dicionários com informações de pessoas (nome, idade, sexo), crie uma nova lista apenas com as pessoas do sexo feminino usando list comprehension.
+Dada uma lista de números, crie uma nova lista com os números maiores que 10 usando list comprehension.
+Dada uma lista de palavras, crie uma nova lista com as palavras que começam com a letra "A" usando list comprehension.
+Dada uma lista de strings, crie uma nova lista com as strings invertidas usando list comprehension.
+Dada uma lista de números, crie uma nova lista com os números elevados ao quadrado usando list comprehension.
+
+Médios:
+Dada uma lista de dicionários com informações de alunos (nome, notas), crie uma nova lista apenas com os nomes dos alunos que obtiveram média acima de 7 usando list comprehension.
+Dada uma lista de números, crie uma nova lista com os números ímpares elevados ao cubo usando list comprehension.
+Dada uma lista de strings, crie uma nova lista com as strings que contêm apenas vogais usando list comprehension.
+Dada uma lista de dicionários com informações de produtos (nome, preço), crie uma nova lista apenas com os nomes dos produtos cujo preço seja menor que 50 usando list comprehension.
+Dada uma lista de números, crie uma nova lista com os números que são múltiplos de 3 e 5 ao mesmo tempo usando list comprehension.
+Dada uma lista de strings, crie uma nova lista com as strings que possuem mais de uma palavra usando list comprehension.
+Dada uma lista de dicionários com informações de livros (título, autor, ano), crie uma nova lista apenas com os títulos dos livros cujo ano seja maior que 2000 usando list comprehension.
+Dada uma lista de números, crie uma nova lista com os números positivos convertidos em strings e os números negativos convertidos em strings com um sinal negativo usando list comprehension.
+Dada uma lista de strings, crie uma nova lista com as strings que têm um número par de caracteres usando list comprehension.
+Dada uma lista de dicionários com informações de alunos (nome, notas), crie uma nova lista apenas com os nomes dos alunos que tiraram notas acima da média da turma usando list comprehension.
+
+Difíceis:
+Dada uma lista de dicionários com informações de funcionários (nome, salário), crie uma nova lista apenas com os nomes dos funcionários que têm salário acima da média usando list comprehension.
+Dada uma lista de números, crie uma nova lista com os números que são divisíveis por 2, 3 e 5 ao mesmo tempo usando list comprehension.
+Dada uma lista de strings, crie uma nova lista com as strings que são palíndromos usando list comprehension.
+Dada uma lista de dicionários com informações de produtos (nome, preço), crie uma nova lista apenas com os nomes dos produtos cujo preço esteja entre 100 e 200 usando list comprehension.
+Dada uma lista de números, crie uma nova lista com os números que são primos usando list comprehension.
+Dada uma lista de strings, crie uma nova lista com as strings que têm apenas letras maiúsculas usando list comprehension.
+Dada uma lista de dicionários com informações de alunos (nome, notas), crie uma nova lista apenas com os nomes dos alunos que obtiveram a maior nota usando list comprehension.
+Dada uma lista de números, crie uma nova lista com os números que são quadrados perfeitos usando list comprehension.
+Dada uma lista de strings, crie uma nova lista com as strings que têm pelo menos uma vogal repetida usando list comprehension.
+Dada uma lista de dicionários com informações de produtos (nome, preço), crie uma nova lista apenas com os nomes dos produtos cujo preço é igual à média dos preços usando list comprehension.

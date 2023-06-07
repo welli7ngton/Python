@@ -1,0 +1,1 @@
+# 6-Escreva uma expressão lambda que verifique se uma string é um palíndromo.
