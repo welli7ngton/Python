@@ -1,0 +1,9 @@
+Exercício de divisão segura:
+Escreva um programa que peça ao usuário para digitar dois números. Em seguida, divida o primeiro número pelo segundo número, mas utilize try e except para lidar com a possibilidade de divisão por zero. Caso ocorra uma divisão por zero, exiba uma mensagem adequada ao usuário.
+
+Exercício de conversão de string para inteiro:
+Escreva um programa que peça ao usuário para digitar um número como string. Em seguida, tente converter essa string para um número inteiro utilizando a função int(). Utilize try e except para tratar a possibilidade de o usuário digitar uma string que não possa ser convertida para um número inteiro. Caso ocorra um erro na conversão, exiba uma mensagem adequada ao usuário.
+
+
+Exercício de manipulação de lista:
+Escreva um programa que declare uma lista vazia. Em seguida, peça ao usuário para digitar um número. Utilize try e except para tratar a possibilidade de o usuário digitar um valor inválido, como uma string. Caso ocorra um erro na conversão, exiba uma mensagem adequada ao usuário. Caso o valor seja válido, adicione-o à lista e exiba a lista atualizada. Repita esse processo até que o usuário digite a palavra "fim".

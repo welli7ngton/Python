@@ -1,6 +1,6 @@
 # Exercício 8:
-# Escreva uma função em Python que receba uma matriz como entrada e retorne uma nova matriz com 
-# os elementos ordenados em ordem crescente.
+# Escreva uma função em Python que receba uma matriz como entrada e retorne uma nova matriz 
+# com os elementos ordenados em ordem crescente.
 
 import random 
 
