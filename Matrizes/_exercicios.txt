@@ -1,0 +1,29 @@
+Exercício 1:
+Escreva uma função em Python que receba duas matrizes como entrada e retorne a soma das duas matrizes. Considere que as matrizes têm o mesmo tamanho.
+
+Exercício 2:
+Escreva uma função em Python que receba uma matriz como entrada e retorne a transposta dessa matriz.
+
+Exercício 3:
+Escreva uma função em Python que receba uma matriz como entrada e retorne o maior elemento presente na matriz.
+
+Exercício 4:
+Escreva uma função em Python que receba uma matriz como entrada e verifique se a matriz é simétrica. Uma matriz é simétrica se ela for igual à sua transposta.
+
+Exercício 5:
+Escreva uma função em Python que receba uma matriz como entrada e retorne a soma de todos os elementos da matriz.
+
+Exercício 6:
+Escreva uma função em Python que receba uma matriz quadrada como entrada e retorne a diagonal principal da matriz.
+
+Exercício 7:
+Escreva uma função em Python que receba duas matrizes como entrada e verifique se as duas matrizes são iguais.
+
+Exercício 8:
+Escreva uma função em Python que receba uma matriz como entrada e retorne uma nova matriz com os elementos ordenados em ordem crescente.
+
+Exercício 9:
+Escreva uma função em Python que receba uma matriz como entrada e retorne o número de linhas e o número de colunas da matriz.
+
+Exercício 10:
+Escreva uma função em Python que receba duas matrizes como entrada e retorne o produto das duas matrizes. Considere que as matrizes são compatíveis para multiplicação.
