@@ -7,14 +7,24 @@ def verifica_simetria(mat):
     linhas = len(mat)
     colunas = len(mat[0])
 
+    if linhas != colunas:
+        return False
+
     transposta = [[0 for _ in range(linhas)]for _ in range(colunas)]
 
     for i in range(linhas):
         for j in range(colunas):
-            transposta[j][i] = mat[i][j]
+            if mat[i][j] != mat[j][i]:
+                return False
     
+    return True
 
 
-mat = [[0 for x in range(5)]for x in range(2)]
+# mat = [[x for x in range(5)]for x in range(5)]
+mat = [
+    [1, 2, 3],
+    [2, 4, 5],
+    [3, 5, 6]
+]
 
-
+print(verifica_simetria(mat))
