@@ -1,0 +1,19 @@
+1- Escreva uma função decoradora chamada logger que registre o tempo de execução de uma função e imprima no console. Use time.time() para obter o tempo inicial e final da execução.
+
+2- Implemente uma função decoradora chamada retry que execute uma função novamente se ela lançar uma exceção específica. A função decoradora deve aceitar o número máximo de tentativas e o tempo de espera entre cada tentativa como argumentos.
+
+3- Crie uma função decoradora chamada validate_args que verifique se os argumentos de uma função estão corretos. Ela deve receber uma função alvo como argumento e uma lista de validações. Cada validação deve ser uma tupla com o índice do argumento e uma função de validação. Se algum argumento não passar na validação correspondente, a função decorada deve lançar uma exceção.
+
+4- Escreva uma função decoradora chamada memoize que armazene em cache o resultado de uma função para os mesmos argumentos de entrada. A próxima chamada com os mesmos argumentos não deve executar novamente a função, mas retornar o resultado armazenado em cache.
+
+5- Implemente uma função chamada count_calls que retorne uma função decorada que conta o número de vezes que a função decorada foi chamada. A função decorada deve imprimir o número de chamadas antes de cada execução.
+
+6- Crie uma função decoradora chamada timer que calcule o tempo de execução de uma função e imprima o resultado em milissegundos. A função decorada deve retornar o resultado original da função.
+
+7- Escreva uma função decoradora chamada capitalize_result que modifique o resultado de uma função para que a primeira letra seja maiúscula. Se o resultado for uma string, apenas a primeira letra da string deve ser alterada para maiúscula. Se o resultado for uma lista de strings, a primeira letra de cada string deve ser alterada para maiúscula.
+
+8- Implemente uma função decoradora chamada retry_with_backoff que execute uma função novamente se ela lançar uma exceção, com um intervalo de tempo crescente entre as tentativas. A função decoradora deve aceitar o número máximo de tentativas e o fator de aumento do intervalo de espera como argumentos.
+
+9- Crie uma função decoradora chamada accepts que verifique se os argumentos de uma função são do tipo esperado. A função decoradora deve aceitar os tipos esperados como argumentos e lançar uma exceção se algum argumento não corresponder ao tipo esperado.
+
+10- Escreva uma função decoradora chamada debug que imprima no console os argumentos de entrada e saída de uma função, juntamente com seu nome. Ela deve exibir informações detalhadas para auxiliar na depuração do código.
