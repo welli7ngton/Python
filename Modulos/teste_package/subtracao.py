@@ -1,5 +1,4 @@
 def sub(x,y):
     return x-y
 
-for a in range(3):
-    print("subtracao")
+print("voce importou", __name__)
