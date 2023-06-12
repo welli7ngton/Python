@@ -1,0 +1,17 @@
+# presente Ravele
+import time
+
+frase = [
+    'E', 'u', ' ', 'T', 'e', ' ', '.', '.', '.', ' ', 'A','-','A','-','A',' ','A', 't', 'u', 'r', 'o', ' ', 'S2'
+    ]
+
+r = ["Q","u","e","r","i","d","a"," ","R","a","v","e","l","e"]
+for i in range(len(r)):
+    print(*r[i],end="")
+    time.sleep(0.25)
+print("\n")
+for i in range(len(frase)):
+    print(*frase[i],end="")
+    time.sleep(0.5)
+
+print()
