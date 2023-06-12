@@ -5,30 +5,25 @@ import time
 
 
 def logger(funcao):
-    ini = time.time()
-    def conta_exec():
-        nonlocal ini,funcao
+    
+    def conta_exec(*args):    
         print("inicio decoracao")
-        funcao()
+        ini = time.time()
+        funcao(*args)
         fim = time.time()
         print("fim decoracao")
         return f"o tempo de execução da função foi: {round(fim - ini, 1)}"
     return conta_exec
 
 
-
-
 @logger
-def conta_ate_10():  
-    for i in range(10):
+def conta_ate_x(x):
+    for i in range(x):
         time.sleep(1)
 
-@logger
-def conta_ate_5():
-    for i in range(5):
-        time.sleep(1)
 
-print(conta_ate_5())
-print(conta_ate_10())
+print(conta_ate_x(8))
 
+print(conta_ate_x(10))
 
+print(conta_ate_x(7))
