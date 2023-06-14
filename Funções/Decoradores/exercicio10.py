@@ -15,6 +15,12 @@ def debug(funcao):
         print(funcao(*args))
         
     return decoradora
+@debug
+def calculamedia(nota1,nota2):
+    media = 0
+    media = (nota1 + nota2) / 2
+
+    return(media)
 
 @debug
 def soma(x,y):
@@ -29,7 +35,4 @@ def div(x,y):
 def prod(x,y):
     return x*y
 
-soma(10,10)
-sub(100,73)
-div(89,3)
-prod(7,7)
+calculamedia(9,4)
