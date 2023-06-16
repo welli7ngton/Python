@@ -13,16 +13,16 @@ Exercícios Fáceis:
 
 Exercícios Medianos:
 
-Crie uma classe chamada "CarrinhoDeCompras" que permite adicionar itens ao carrinho e calcular o valor total da compra.
-Crie uma classe chamada "Banco" que permite cadastrar clientes, abrir contas bancárias e fazer transferências entre contas.
-Crie uma classe chamada "Pessoa" com atributos de instância "nome" e "endereço" e um método "adicionar_telefone" que permite adicionar um telefone à lista de telefones da pessoa.
-Crie uma classe chamada "Funcionário" com atributos de instância "nome" e "salário" e um método "aumentar_salário" que aumenta o salário do funcionário em uma determinada porcentagem.
-Crie uma classe chamada "Agenda" que permite adicionar eventos em datas específicas e listar os eventos de um determinado dia.
-Crie uma classe chamada "Círculo" com atributos de instância "raio" e "cor" e um método "desenhar" que desenha o círculo na tela usando a biblioteca turtle.
-Crie uma classe chamada "ContaPoupança" que herda da classe "ContaBancária" (do exercício fácil 4) e possui um atributo de instância "juros" e um método "calcular_juros" que calcula o juros sobre o saldo da conta.
-Crie uma classe chamada "Funcionário" com atributos de instância "nome" e "cargo" e um método "apresentar_cargo" que imprime o nome e o cargo do funcionário.
-Crie uma classe chamada "Jogo" com métodos "iniciar", "jogar" e "encerrar" que representam as etapas de um jogo.
-Crie uma classe chamada "Círculo" com atributos de instância "raio" e "centro" (coordenadas x e y) e um método "mover" que move o círculo para uma nova posição.
+1- Crie uma classe chamada "CarrinhoDeCompras" que permite adicionar itens ao carrinho e calcular o valor total da compra.
+2- Crie uma classe chamada "Banco" que permite cadastrar clientes, abrir contas bancárias e fazer transferências entre contas.
+3- Crie uma classe chamada "Pessoa" com atributos de instância "nome" e "endereço" e um método "adicionar_telefone" que permite adicionar um telefone à lista de telefones da pessoa.
+4- Crie uma classe chamada "Funcionário" com atributos de instância "nome" e "salário" e um método "aumentar_salário" que aumenta o salário do funcionário em uma determinada porcentagem.
+5- Crie uma classe chamada "Agenda" que permite adicionar eventos em datas específicas e listar os eventos de um determinado dia.
+6- Crie uma classe chamada "Círculo" com atributos de instância "raio" e "cor" e um método "desenhar" que desenha o círculo na tela usando a biblioteca turtle.
+7- Crie uma classe chamada "ContaPoupança" que herda da classe "ContaBancária" (do exercício fácil 4) e possui um atributo de instância "juros" e um método "calcular_juros" que calcula o juros sobre o saldo da conta.
+8- Crie uma classe chamada "Funcionário" com atributos de instância "nome" e "cargo" e um método "apresentar_cargo" que imprime o nome e o cargo do funcionário.
+9- Crie uma classe chamada "Jogo" com métodos "iniciar", "jogar" e "encerrar" que representam as etapas de um jogo.
+10- Crie uma classe chamada "Círculo" com atributos de instância "raio" e "centro" (coordenadas x e y) e um método "mover" que move o círculo para uma nova posição.
 Exercícios Difíceis:
 
 Crie uma classe chamada "Veículo" com atributos de instância "marca", "modelo" e "ano" e um método "detalhes" que imprime todas as informações do veículo.
