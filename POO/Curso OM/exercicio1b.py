@@ -3,26 +3,16 @@
 # e depois crie novamente as instâncias
 # da classe com os dados salvos
 # Faça em arquivos separados.
-
+from exercicio1a import Pessoa
 import json
 
-class Pessoa:
 
-    def __init__(self,nome,idade,cidade,telefone,email):
-        self.nome = nome
-        self.idade = idade
-        self.cidade = cidade
-        self.telefone = telefone
-        self.email = email
-dados = [1,2,3]
+
 with open("__dados.json","r",encoding="utf-8") as arq:
-    dados = json.load(arq)
+    impor = json.load(arq)
 
-
-p1 = Pessoa(**dados)
+p1 = Pessoa(**impor[0])
+p2 = Pessoa(**impor[1])
 
 print(p1.nome)
-print(p1.idade)
-print(p1.cidade)
-print(p1.telefone)
-print(p1.email)
+print(p2.nome)

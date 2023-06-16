@@ -1,1 +1,16 @@
-{"nome": "Wellington", "idade": 20, "cidade": "Morada Nova", "telefone": "88 9 8176-2299", "email": "wellingtonasilva45@gmail.com"}
+[
+  {
+    "nome": "Wellington",
+    "idade": 20,
+    "cidade": "Morada Nova",
+    "telefone": "88 9 8176-2299",
+    "email": "wellingtonasilva45@gmail.com"
+  },
+  {
+    "nome": "Jos\u00e9",
+    "idade": 32,
+    "cidade": "Pau dos Ferros",
+    "telefone": "85 9 8734-7728",
+    "email": "jose1234@outlook.com"
+  }
+]
