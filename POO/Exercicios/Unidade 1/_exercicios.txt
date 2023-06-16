@@ -1,15 +1,16 @@
 Exercícios Fáceis:
 
-Crie uma classe chamada "Círculo" com um atributo de instância "raio" e um método "calcular_area" que retorna a área do círculo.
-Crie uma classe chamada "Retângulo" com atributos de instância "largura" e "altura" e um método "calcular_area" que retorna a área do retângulo.
-Crie uma classe chamada "Pessoa" com atributos de instância "nome" e "idade" e um método "dizer_oi" que imprime uma saudação com o nome da pessoa.
-Crie uma classe chamada "ContaBancária" com atributos de instância "titular" e "saldo" e métodos para depositar e sacar dinheiro da conta.
-Crie uma classe chamada "Carro" com atributos de instância "marca" e "modelo" e um método "apresentar_carro" que imprime a marca e o modelo do carro.
-Crie uma classe chamada "Triângulo" com atributos de instância "lado1", "lado2" e "lado3" e um método "verificar_tipo" que verifica se o triângulo é equilátero, isósceles ou escaleno.
-Crie uma classe chamada "Livro" com atributos de instância "título", "autor" e "ano" e um método "detalhes" que imprime todas as informações do livro.
-Crie uma classe chamada "Animal" com um método "emitir_som" que imprime o som que o animal faz.
-Crie uma classe chamada "Estudante" com atributos de instância "nome" e "curso" e um método "apresentar_estudante" que imprime o nome e o curso do estudante.
-Crie uma classe chamada "Cachorro" com um método "latir" que imprime o som "Au au!".
+1- Crie uma classe chamada "Círculo" com um atributo de instância "raio" e um método "calcular_area" que retorna a área do círculo.
+2- Crie uma classe chamada "Retângulo" com atributos de instância "largura" e "altura" e um método "calcular_area" que retorna a área do retângulo.
+3- Crie uma classe chamada "Pessoa" com atributos de instância "nome" e "idade" e um método "dizer_oi" que imprime uma saudação com o nome da pessoa.
+4- Crie uma classe chamada "ContaBancária" com atributos de instância "titular" e "saldo" e métodos para depositar e sacar dinheiro da conta.
+5- Crie uma classe chamada "Carro" com atributos de instância "marca" e "modelo" e um método "apresentar_carro" que imprime a marca e o modelo do carro.
+6- Crie uma classe chamada "Triângulo" com atributos de instância "lado1", "lado2" e "lado3" e um método "verificar_tipo" que verifica se o triângulo é equilátero, isósceles ou escaleno.
+7- Crie uma classe chamada "Livro" com atributos de instância "título", "autor" e "ano" e um método "detalhes" que imprime todas as informações do livro.
+8- Crie uma classe chamada "Animal" com um método "emitir_som" que imprime o som que o animal faz.
+9- Crie uma classe chamada "Estudante" com atributos de instância "nome" e "curso" e um método "apresentar_estudante" que imprime o nome e o curso do estudante.
+10 -Crie uma classe chamada "Cachorro" com um método "latir" que imprime o som "Au au!".
+
 Exercícios Medianos:
 
 Crie uma classe chamada "CarrinhoDeCompras" que permite adicionar itens ao carrinho e calcular o valor total da compra.
