@@ -1,8 +1,6 @@
 # Exercicio Baralho OBI
 # https://olimpiada.ic.unicamp.br/pratique/ps/2021/f1/baralho/
 
-
-
 dados = input()
 
 P = [0 for x in range(13)]
