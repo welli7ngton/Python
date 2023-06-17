@@ -1,0 +1,20 @@
+1- Crie uma classe chamada "Person" com as propriedades name e age. Implemente um getter para age que retorna a idade da pessoa em meses.
+2- Crie uma classe chamada "Circle" com a propriedade radius. Implemente um setter para radius que verifica se o valor passado é positivo.
+3- Crie uma classe chamada "BankAccount" com as propriedades balance e interest_rate. Implemente um setter para interest_rate que verifica se o valor passado é um número entre 0 e 1.
+4- Crie uma classe chamada "Temperature" com as propriedades celsius e fahrenheit. Implemente getters e setters para ambas as propriedades, de modo que ao definir o valor de celsius, o valor de fahrenheit seja atualizado automaticamente (e vice-versa).
+5- Crie uma classe chamada "Student" com as propriedades name e grades. Implemente um getter para grades que retorna uma string formatada com todas as notas do aluno.
+6- Crie uma classe chamada "Product" com as propriedades name e price. Implemente um setter para price que verifica se o valor passado é maior que zero.
+7- Crie uma classe chamada "Rectangle" com as propriedades width e height. Implemente getters e setters para ambas as propriedades, de modo que ao definir o valor de width, o valor de height seja atualizado automaticamente (e vice-versa) para manter a proporção original do retângulo.
+8- Crie uma classe chamada "Employee" com as propriedades name e salary. Implemente um getter para salary que retorna o salário do funcionário formatado como uma string com o símbolo do dólar.
+9- Crie uma classe chamada "Car" com a propriedade mileage. Implemente um setter para mileage que verifica se o valor passado é um número positivo.
+10- Crie uma classe chamada "Book" com as propriedades title e author. Implemente um getter para title que retorna o título do livro em letras maiúsculas.
+Crie uma classe chamada "Square" com a propriedade side_length. Implemente um getter para side_length que retorna a medida do lado do quadrado em centímetros.
+Crie uma classe chamada "Country" com as propriedades name e population. Implemente um setter para population que verifica se o valor passado é um número inteiro positivo.
+Crie uma classe chamada "Song" com as propriedades title e artist. Implemente um setter para artist que verifica se o valor passado é uma string não vazia.
+Crie uma classe chamada "BankAccount" com as propriedades balance e transaction_history. Implemente um getter para transaction_history que retorna uma lista reversa com as últimas transações feitas na conta.
+Crie uma classe chamada "Email" com as propriedades subject e sender. Implemente um setter para sender que verifica se o valor passado contém um símbolo de arroba (@).
+Crie uma classe chamada "Square" com a propriedade side_length. Implemente um setter para side_length que verifica se o valor passado é um número positivo e atualize automaticamente a propriedade area com o valor do lado ao quadrado.
+Crie uma classe chamada "Student" com as propriedades name e grades. Implemente um getter para grades que retorna uma lista com todas as notas do aluno em ordem decrescente.
+Crie uma classe chamada "Person" com as propriedades name e age. Implemente um setter para age que verifica se o valor passado é um número inteiro positivo.
+Crie uma classe chamada "Product" com as propriedades name e discounted_price. Implemente um setter para discounted_price que verifica se o valor passado é maior que zero e atualize automaticamente a propriedade is_discounted para True ou False, dependendo do valor.
+Crie uma classe chamada "Car" com as propriedades make e year. Implemente um setter para year que verifica se o valor passado é um número entre 1900 e o ano atual.
