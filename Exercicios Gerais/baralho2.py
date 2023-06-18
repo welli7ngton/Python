@@ -8,26 +8,18 @@ def divide_naipes(lista_dados):
 
     return  C,E,U,P
 
-def verifica_iguais(lista_cartas):
-    if len(lista_cartas) == 0:
+def verifica_iguais(lista_cartas,pos=0):
+    if pos > len(lista_cartas) or len(lista_cartas) == 0:
         return True
-
-    pos = 0
-    verificador = 0
-    while pos < len(lista_cartas):
-        
-        carta = lista_cartas.pop(0)
-        for item in lista_cartas:
-            if carta == item:
-                verificador += 1
-        lista_cartas.append(carta)
-        pos += 1
-
-    if verificador > 0:
+    carta = lista_cartas.pop(0)
+    if carta in lista_cartas:
         return False
-
-    return True
-            
+    
+    lista_cartas.append(carta)
+    pos += 1
+    
+    return verifica_iguais(lista_cartas,pos)
+           
 def retorna_falta(cartasX):
     if not verifica_iguais(cartasX):
         return "erro"
