@@ -22,10 +22,10 @@ Exercícios Medianos:
 6- Crie uma classe chamada "ContaPoupança" que herda da classe "ContaBancária" (do exercício fácil 4) e possui um atributo de instância "juros" e um método "calcular_juros" que calcula o juros sobre o saldo da conta.
 7- Crie uma classe chamada "Funcionário" com atributos de instância "nome" e "cargo" e um método "apresentar_cargo" que imprime o nome e o cargo do funcionário.
 8- Crie uma classe chamada "Jogo" com métodos "iniciar", "jogar" e "encerrar" que representam as etapas de um jogo.
-9- Crie uma classe chamada "Círculo" com atributos de instância "raio" e "centro" (coordenadas x e y) e um método "mover" que move o círculo para uma nova posição.
+
 Exercícios Difíceis:
 
-Crie uma classe chamada "Veículo" com atributos de instância "marca", "modelo" e "ano" e um método "detalhes" que imprime todas as informações do veículo.
+
 Crie uma classe chamada "Loja" que permite adicionar produtos ao estoque, realizar vendas e calcular o valor total das vendas.
 Crie uma classe chamada "Pessoa" com atributos de instância "nome", "idade" e "endereço" e um método "adicionar_email" que permite adicionar um email à lista de emails da pessoa.
 Crie uma classe chamada "Funcionário" com atributos de instância "nome", "salário" e "departamento" e um método "transferir_departamento" que transfere o funcionário para um novo departamento.
