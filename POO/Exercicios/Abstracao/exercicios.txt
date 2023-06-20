@@ -1,0 +1,29 @@
+Crie uma classe abstrata chamada Forma com um método abstrato calcular_area(). Implemente classes concretas para representar diferentes formas geométricas, como quadrado, retângulo e círculo. Cada classe deve fornecer uma implementação adequada do método calcular_area().
+
+Crie uma classe abstrata chamada Animal com métodos abstratos emitir_som() e mover(). Implemente classes concretas para representar diferentes animais, como cão, gato e pássaro. Cada classe deve fornecer uma implementação adequada dos métodos abstratos.
+
+Crie uma classe abstrata chamada ContaBancaria com métodos abstratos depositar() e sacar(). Implemente classes concretas para representar diferentes tipos de conta bancária, como conta corrente e conta poupança. Cada classe deve fornecer uma implementação adequada dos métodos abstratos.
+
+Crie uma classe abstrata chamada Veiculo com métodos abstratos acelerar() e frear(). Implemente classes concretas para representar diferentes tipos de veículos, como carro, moto e bicicleta. Cada classe deve fornecer uma implementação adequada dos métodos abstratos.
+
+Crie uma classe abstrata chamada Funcionario com métodos abstratos calcular_salario() e exibir_informacoes(). Implemente classes concretas para representar diferentes tipos de funcionários, como gerente, vendedor e estagiário. Cada classe deve fornecer uma implementação adequada dos métodos abstratos.
+
+Crie uma classe abstrata chamada Produto com métodos abstratos calcular_preco() e exibir_detalhes(). Implemente classes concretas para representar diferentes tipos de produtos, como livro, eletrônico e vestuário. Cada classe deve fornecer uma implementação adequada dos métodos abstratos.
+
+Crie uma classe abstrata chamada InstrumentoMusical com métodos abstratos tocar() e afinar(). Implemente classes concretas para representar diferentes instrumentos musicais, como piano, violão e bateria. Cada classe deve fornecer uma implementação adequada dos métodos abstratos.
+
+Crie uma classe abstrata chamada Figura3D com métodos abstratos calcular_volume() e calcular_area_superficial(). Implemente classes concretas para representar diferentes figuras tridimensionais, como cubo, esfera e cilindro. Cada classe deve fornecer uma implementação adequada dos métodos abstratos.
+
+Crie uma classe abstrata chamada Jogo com métodos abstratos iniciar() e encerrar(). Implemente classes concretas para representar diferentes jogos, como jogo da velha, batalha naval e sudoku. Cada classe deve fornecer uma implementação adequada dos métodos abstratos.
+
+Crie uma classe abstrata chamada Pessoa com métodos abstratos falar() e andar(). Implemente classes concretas para representar diferentes pessoas, como estudante, professor e médico. Cada classe deve fornecer uma implementação adequada dos métodos abstratos.
+
+Crie uma classe abstrata chamada EstruturaDados com métodos abstratos inserir(), remover() e buscar(). Implemente classes concretas para representar diferentes estruturas de dados, como lista encadeada, pilha e árvore binária. Cada classe deve fornecer uma implementação adequada dos métodos abstratos.
+
+Crie uma classe abstrata chamada OperacaoMatematica com métodos abstratos calcular(). Implemente classes concretas para representar diferentes operações matemáticas, como adição, subtração e multiplicação. Cada classe deve fornecer uma implementação adequada do método abstrato.
+
+Crie uma classe abstrata chamada SistemaOperacional com métodos abstratos iniciar(), encerrar() e executar_aplicativo(). Implemente classes concretas para representar diferentes sistemas operacionais, como Windows, macOS e Linux. Cada classe deve fornecer uma implementação adequada dos métodos abstratos.
+
+Crie uma classe abstrata chamada RedeSocial com métodos abstratos publicar_postagem(), curtir_postagem() e comentar_postagem(). Implemente classes concretas para representar diferentes redes sociais, como Facebook, Instagram e Twitter. Cada classe deve fornecer uma implementação adequada dos métodos abstratos.
+
+Crie uma classe abstrata chamada MeioTransporte com métodos abstratos mover() e obter_consumo_combustivel(). Implemente classes concretas para representar diferentes meios de transporte, como carro, avião e bicicleta. Cada classe deve fornecer uma implementação adequada dos métodos abstratos.
