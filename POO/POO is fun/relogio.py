@@ -15,47 +15,60 @@
 import time
 
 class Relogio:
+    def __init__(self, hora=0, minuto=0, segundo=0):
+        self.__hora = self.set_hora(hora)
+        self.__minuto = self.set_minuto(minuto)
+        self.__segundo = self.set_segundo(segundo)
 
-    funcionando = False
+    def get_hora(self):
+        return self.__hora
 
-    def __init__(self):
-        self.hora = 0
-        self.min = 0
-        self.seg = 0
-        
-    def ajusta_hora(self,hora,minuto,segundo):
-        if segundo >= 60 or minuto >= 60 or hora >=24:
-            print("Valor inválido.")
-            return False
-        self.hora = hora
-        self.min = minuto
-        self.seg = segundo
-    
-    def mostra_hora(self):
-        print(f"{self.hora}:{self.min}:{self.seg}")
-    
-    @classmethod
-    def conta_tempo(self,hora=self.hora,minuto=self.min,segundo=self.seg):
-        while True:
-            for i in range(0,59):
-                time.sleep(1)
-                segundo += 1
-            minuto += 1
-            if minuto == 60 and hora <= 12:
-                minuto = 0
-                hora += 1
-                return hora,minuto,segundo
-            elif hora == 12:
-                hora = 0
-                minuto = 0
-                segundo = 0
-                return hora,minuto,segundo
+    def get_minuto(self):
+        return self.__minuto
 
-    self.hora, self.min,self.seg = conta_tempo()
+    def get_segundo(self):
+        return self.__segundo
 
+    def set_hora(self, hora):
+        if 0 <= hora < 24:
+            return hora
+        else:
+            return self.__hora
 
-r1 = Relogio()
+    def set_minuto(self, minuto):
+        if 0 <= minuto < 60:
+            return minuto
+        else:
+            return self.__minuto
 
-r1.ajusta_hora(21, 4, 32)
+    def set_segundo(self, segundo):
+        if 0 <= segundo < 60:
+            return segundo
+        else:
+            return self.__segundo
 
-r1.mostra_hora()
+    def imprimir_hora(self):
+        print(f"{self.__hora:02d}:{self.__minuto:02d}:{self.__segundo:02d}")
+
+    def incrementar_segundo(self):
+        self.__segundo += 1
+        if self.__segundo == 60:
+            self.__segundo = 0
+            self.incrementar_minuto()
+
+    def incrementar_minuto(self):
+        self.__minuto += 1
+        if self.__minuto == 60:
+            self.__minuto = 0
+            self.incrementar_hora()
+
+    def incrementar_hora(self):
+        self.__hora += 1
+        if self.__hora == 24:
+            self.__hora = 0
+
+r = Relogio()
+
+for a in range(300):
+    r.incrementar_segundo()
+    r.imprimir_hora()
