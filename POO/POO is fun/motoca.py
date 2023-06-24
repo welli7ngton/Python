@@ -75,15 +75,14 @@ class Moto:
             print("Sem tempo para andar na moto.\n")
             return False
         print(f"{other.nome} está dirigindo.\n")
-        buzinar(self)
+        self.buzinar()
         c = 1
         while self.tempo != 0:
             time.sleep(1)
             print(f"Se passou {c} min.\n")
             c += 1
             self.tempo -= 1
-        print("O passeio acabou.\n")
-        
+        print("O passeio acabou.\n")     
         return True
     
     def buzinar(self):
