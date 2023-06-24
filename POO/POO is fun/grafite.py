@@ -50,8 +50,6 @@ class Lapiseira:
             print("Lapiseira não aceita esse calibre de grafite.")
             return False
 
-
-        self.calibre = calibre
         self.dureza = dureza.lower()
         self.tamanho = tamanho
         self.tem_grafite = True
