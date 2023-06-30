@@ -33,34 +33,34 @@ Banco autentica por um método.
 """
 
 
-from abc import ABC,abstractmethod
+from abc import ABC, abstractmethod
+
 
 class Conta(ABC):
-
-    def __init__(self,agencia,numero,saldo=0):
+    def __init__(self, agencia, numero, saldo=0):
         self.agencia = agencia
         self.numero = numero
         self.saldo = saldo
-    
+
     @abstractmethod
-    def sacar(self,valor_saque):...
+    def sacar(self, valor_saque): ...
 
-    def detalhes(self,msg=""):
-        print(msg,f"Seu saldo atual é: {self.saldo:.2f}")
+    def detalhes(self, msg=""):
+        print(msg, f"Seu saldo atual é: {self.saldo:.2f}")
 
-    def depositar(self,valor_deposito):
+    def depositar(self, valor_deposito):
         self.saldo += valor_deposito
         self.detalhes(msg="Operação realizada.\n")
         return True
-    
-class ContaPoupanca(Conta):
 
-    def __init__(self,agencia,numero,saldo=0):
+
+class ContaPoupanca(Conta):
+    def __init__(self, agencia, numero, saldo=0):
         self.agencia = agencia
         self.numero = numero
         self.saldo = saldo
-    
-    def sacar(self,valor_saque):
+
+    def sacar(self, valor_saque):
         if valor_saque > self.saldo:
             self.detalhes(msg="Saldo insuficiente, operação não realizada.\n")
             return False
@@ -68,13 +68,13 @@ class ContaPoupanca(Conta):
         self.detalhes(msg="Operação realizada.\n")
         return True
 
-class ContaCorrente(Conta):
 
-    def __init__(self,agencia,numero,saldo=0,limite=0):
-        super().__init__(agencia,numero,saldo)
+class ContaCorrente(Conta):
+    def __init__(self, agencia, numero, saldo=0, limite=0):
+        super().__init__(agencia, numero, saldo)
         self.limite = limite
 
-    def sacar(self,valor_saque):
+    def sacar(self, valor_saque):
         valor_pos_saque = self.saldo - valor_saque
         limite_maximo = -self.limite
 
@@ -86,6 +86,39 @@ class ContaCorrente(Conta):
         self.detalhes(msg="Operação não realizada.\n")
         return False
 
+
+class Pessoa(ABC):
+    @property
+    def get_nome(self):
+        return self.nome
+
+    @get_nome.setter
+    def get_nome(self, nome):
+        self.nome = nome
+
+    @property
+    def get_idade(self):
+        return self.idade
+
+    @get_idade.setter
+    def get_idade(self, idade):
+        self.idade = idade
+
+
+class Cliente(Pessoa):
+    def __init__(self):
+        r = input("Qual o tipo de conta 1-Corrente | 2-Poupança: ")
+        if r == "1":
+            self.conta = ContaCorrente(111, 222)
+            print("Conta corrente criada com sucesso.")
+        elif r == "2":
+            self.conta = ContaPoupanca(333, 444)
+            print("Conta poupança criada com sucesso.")
+        elif r not in "12" or r == "12":
+            print("Resposta inválida.")
+
+    def __repr__(self):
+        return f"{self.nome.title()}"
 # testes
 
 # cp1 = ContaPoupanca(111,222,100)
