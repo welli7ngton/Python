@@ -67,13 +67,14 @@ class ContaPoupanca(Conta):
         if valor_saque > self.saldo:
             self.detalhes(msg="Saldo insuficiente, operação não realizada.\n")
             return False
-        self.saldo -= valor_saque 
+        self.saldo -= valor_saque
         self.detalhes(msg="Operação realizada.\n")
         return True
 
 
 class ContaCorrente(Conta):
-    def __init__(self, agencia, numero, saldo=0, limite=0):
+    def __init__(self, agencia: int, numero: int,
+                 saldo: float = 0, limite: float = 0):
         super().__init__(agencia, numero, saldo)
         self.limite = limite
 
@@ -90,7 +91,7 @@ class ContaCorrente(Conta):
             return True
 
         self.detalhes(msg="Operação não realizada.\n")
-        return False   
+        return False
 # testes
 
 # cp1 = ContaPoupanca(111,222,100)
