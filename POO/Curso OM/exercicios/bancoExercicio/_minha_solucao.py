@@ -39,84 +39,37 @@ Banco autentica por um método (autenticar).
 import abc
 
 
-class Conta(abc.ABC):
-    def __init__(self, agencia: int, numeracao: int, saldo: float = 0) -> None:
-        self.agencia = agencia
-        self.numeracao = numeracao
-        self.saldo = saldo
+class Banco:
 
-    @abc.abstractclassmethod
-    def sacar(self, valor_saque: float):
-        pass
+    def __init__(self, nome, agencias: list[int]) -> None:
+        self.nome = nome
+        self.agencias = agencias
+        self.contas = []
+        self.clientes = []
 
     def __repr__(self) -> str:
-        return f"Agencia({self.agencia!r}) | Numeração({self.numeracao!r})"
+        return f"{__class__.__name__}: {self.nome}"
 
-    def detalhes(self, msg: str = "Detalhes:"):
-        print(msg, "\n", f"Saldo atual: {self.saldo:.2f}")
+    def checa_agencia(self, cliente) -> bool:
+        if cliente.agencia not in self.agencias:
+            False
+        True
 
-
-class ContaPoupanca(Conta):
-    def __init__(self, agencia: int, numeracao: int, saldo: float = 0) -> bool:
-        super().__init__(agencia, numeracao, saldo)
-
-    def sacar(self, valor_saque: float):
-        if self.saldo < valor_saque:
-            self.detalhes(msg="Operação não realizada, saldo insuficiente.")
+    def checa_conta(self, cliente) -> bool:
+        if cliente.conta not in self.contas:
             return False
-        self.saldo -= valor_saque
-        self.detalhes(msg="Operação realizada.")
-        return True
+        True
 
-    def depositar(self, valor_deposito: float) -> bool:
-        self.saldo += valor_deposito
-        self.detalhes(msg="Operação realizada.")
-        return True
-
-
-class ContaCorrente(Conta):
-    def __init__(
-            self,
-            agencia: int,
-            numeracao: int,
-            saldo: float = 0,
-            limite: float = 0
-            ) -> None:
-        super().__init__(agencia, numeracao, saldo)
-        self.limite = limite
-
-    def sacar(self, valor_saque: float) -> bool:
-        valor_pos_saque = self.saldo - valor_saque
-        limite_maximo = -self.limite
-
-        if valor_pos_saque <= limite_maximo:
-            self.detalhes(msg="Operação não realizada, limite insuficiente.")
+    def checa_cliente(self, cliente) -> bool:
+        if cliente not in self.clientes:
             return False
-        self.saldo -= valor_saque
-        self.detalhes(msg="Operação realizada.")
+        True
 
-    def depositar(self, valor_deposito: float) -> bool:
-        self.saldo += valor_deposito
-        self.detalhes(msg="Operação realizada.")
+    def autenticar(self):
+        if not self.checa_agencia or not self.checa_conta:
+            return False
+        print("Conta autenticada.")
         return True
-
-
-# testes contas
-# c1 = ContaCorrente(111, 222, 100, 200)
-# c2 = ContaPoupanca(333, 444, 100)
-
-
-# print(c1)
-# print(c2)
-# c1.sacar(100)
-# c2.detalhes()
-# c2.sacar(100)
-# c2.depositar(1000)
-# c2.sacar(10001)
-# c1.sacar(1)
-# c1.sacar(100)
-# c1.depositar(100)
-# c1.depositar(7)
 
 
 class Pessoa:
@@ -142,6 +95,7 @@ class Pessoa:
 
 
 class Cliente(Pessoa):
+
     def __init__(self, nome: str, idade: int) -> None:
         super().__init__(nome, idade)
         self.banco = None
@@ -154,59 +108,114 @@ class Cliente(Pessoa):
     def cria_conta_corrente(self,
                             agencia: int,
                             numeracao: int,
+                            banco: Banco,
                             saldo: float = 0,
                             limite: float = 0
                             ):
-        self.conta = ContaCorrente(agencia, numeracao, saldo, limite)
+        if agencia not in banco.agencias:
+            print("Nosso banco não contém essa agencia, operação cancelada.")
+            return False
+        self.conta = ContaCorrente(agencia, numeracao, banco, saldo, limite)
+        self.banco = banco
+        self.banco.contas.append(numeracao)
 
     def cria_conta_poupanca(self,
                             agencia: int,
                             numeracao: int,
+                            banco: Banco,
                             saldo: float = 0
                             ):
-        self.conta = ContaPoupanca(agencia, numeracao, saldo)
-
-    def add_banco_cliente(self):
-        ...
-
-
-# testes clientes com contas
-# c1 = Cliente("Wellington", 20)
-# c1.cria_conta_corrente(111, 222, 100)
-# conta_c1 = c1.conta
-# conta_c1.sacar(50)
-
-# c2 = Cliente("Maria Helena", 18)
-# c2.cria_conta_poupanca(333, 444, 100)
-# conta_c2 = c2.conta
-# conta_c2.sacar(50)
-# conta_c2.depositar(1000)
-# conta_c2.detalhes()
-# print(c1)
-# print(c2)
+        if agencia not in banco.agencias:
+            print("Nosso banco não contém essa agencia, operação cancelada.")
+            return False
+        self.conta = ContaPoupanca(agencia, numeracao, banco, saldo)
+        self.banco.contas.append(numeracao)
 
 
-class Banco:
+class Conta(abc.ABC):
+    def __init__(self, agencia: int, numeracao: int, saldo: float = 0) -> None:
+        self.agencia = agencia
+        self.numeracao = numeracao
+        self.saldo = saldo
+
+    @abc.abstractclassmethod
+    def sacar(self, valor_saque: float):
+        pass
+
+    def __repr__(self) -> str:
+        return f"Agencia({self.agencia!r}) | Numeração({self.numeracao!r})"
+
+    def detalhes(self, msg: str = "Detalhes:"):
+        print(msg, "\n", f"Saldo atual: {self.saldo:.2f}")
+
+
+class ContaPoupanca(Conta):
     def __init__(self,
-                 agencias: list[int] | None,
-                 clientes: list[Pessoa] | None,
-                 contas: list[Conta] | None
-                 ) -> None:
-        self.agencias = agencias or []
-        self.clientes = clientes or []
-        self.contas = contas or []
+                 agencia: int,
+                 numeracao: int,
+                 banco: Banco,
+                 saldo: float = 0
+                 ) -> bool:
+        super().__init__(agencia, numeracao, saldo)
+        self.banco = banco
 
-    def checa_agencia(self, conta):
-        ...
+    def sacar(self, valor_saque: float):
+        print("Autenticando...")
+        if not self.banco.autenticar():
+            return False
+        if self.saldo < valor_saque:
+            self.detalhes(msg="Operação não realizada, saldo insuficiente.")
+            return False
+        self.saldo -= valor_saque
+        self.detalhes(msg="Operação realizada.")
+        return True
 
-    def checa_cliente(self, cliente):
-        ...
-
-    def checa_conta(self, agencia):
-        ...
-
-    def checa_conta_cliente(self, conta, cliente):
-        ...
+    def depositar(self, valor_deposito: float) -> bool:
+        self.saldo += valor_deposito
+        self.detalhes(msg="Operação realizada.")
+        return True
 
 
-banco1 = Banco(agencias=[111, 222, 333], clientes=[])
+class ContaCorrente(Conta):
+    def __init__(
+            self,
+            agencia: int,
+            numeracao: int,
+            banco: Banco,
+            saldo: float = 0,
+            limite: float = 0
+            ) -> None:
+        super().__init__(agencia, numeracao, saldo)
+        self.limite = limite
+        self.banco = banco
+        print(self.banco)
+
+    def sacar(self, valor_saque: float) -> bool:
+        print("Autenticando...")
+        if not self.banco.autenticar():
+            return False
+        valor_pos_saque = self.saldo - valor_saque
+        limite_maximo = -self.limite
+
+        if valor_pos_saque <= limite_maximo:
+            self.detalhes(msg="Operação não realizada, limite insuficiente.")
+            return False
+        self.saldo -= valor_saque
+        self.detalhes(msg="Operação realizada.")
+
+    def depositar(self, valor_deposito: float) -> bool:
+        self.saldo += valor_deposito
+        self.detalhes(msg="Operação realizada.")
+        return True
+
+
+banco1 = Banco("Nubank", [111, 222, 333])
+banco2 = Banco("Picpay", [444, 555, 666])
+
+cliente1 = Cliente("Wellington", 20)
+cliente2 = Cliente("Maria Helena", 20)
+
+conta_corrente1 = cliente1.cria_conta_corrente(112, 10, banco1, 100, 50)
+cliente1.cria_conta_corrente(111, 10, banco1, saldo=100, limite=50)
+print(cliente1.conta)
+cliente1.conta.sacar(100)
