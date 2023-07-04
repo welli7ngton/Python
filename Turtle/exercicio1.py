@@ -1,11 +1,13 @@
-#Escreva uma função chamada square que receba um parâmetro chamado t, que é um turtle. Ela deve usar o turtle para 
-#desenhar um quadrado.
+# Escreva uma função chamada square que receba um parâmetro chamado t,
+# que é um turtle. Ela deve usar o turtle para
+# desenhar um quadrado.
 
-#Escreva uma chamada de função que passe bob como um argumento para o square e então execute o programa novamente
-
+# Escreva uma chamada de função que passe bob como um argumento para o square e
+# então execute o programa novamente
 
 
 import turtle
+
 
 def teste(bob=0):
 
@@ -17,5 +19,6 @@ def teste(bob=0):
         bob.lt(90)
 
     turtle.mainloop()
+
 
 teste()

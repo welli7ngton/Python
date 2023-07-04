@@ -1,8 +1,10 @@
-#Escreva um conjunto de funções adequadamente geral que possa desenhar flores como as da Figura 4.1.
-#exercicios do livro pense em python
+# Escreva um conjunto de funções adequadamente geral que
+# possa desenhar flores como as da Figura 4.1.
+# exercicios do livro pense em python
 import turtle
 
 q = turtle.Turtle()
+
 
 def desenhaflor1(b):
 
@@ -13,13 +15,8 @@ def desenhaflor1(b):
             b.fd(30)
             b.lt(6)
         b.lt(150)
-        
-
-
 
 
 desenhaflor1(q)
-    
-
 
 turtle.mainloop()
