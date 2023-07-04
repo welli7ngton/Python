@@ -1,0 +1,29 @@
+Exercício 1: Calculadora de dias úteis
+Crie uma classe chamada CalculadoraDiasUteis que receba uma data de início e uma quantidade de dias como argumentos. A classe deve fornecer um método para calcular a data final considerando apenas dias úteis (excluindo sábados e domingos).
+
+Exercício 2: Conversor de fusos horários
+Crie uma função chamada converte_fuso_horario que receba uma data e hora, um fuso horário de origem e um fuso horário de destino. A função deve retornar a data e hora convertidas para o fuso horário de destino.
+
+Exercício 3: Rastreador de datas importantes
+Crie uma classe chamada RastreadorDatas que receba uma lista de datas como argumento. A classe deve fornecer métodos para verificar se uma determinada data está presente na lista e para calcular a quantidade de dias entre a data atual e a próxima data da lista.
+
+Exercício 4: Contador regressivo para eventos
+Crie uma classe chamada ContadorRegressivo que receba uma data e hora de um evento como argumento. A classe deve fornecer um método para iniciar um contador regressivo que exiba o tempo restante até o evento, atualizado a cada segundo.
+
+Exercício 5: Verificador de horário de expediente
+Crie uma função chamada verifica_horario_expediente que receba uma data e hora como argumento e verifique se está dentro do horário de expediente de uma empresa (por exemplo, das 9h às 18h, de segunda a sexta-feira). A função deve retornar True se estiver no horário de expediente e False caso contrário.
+
+Exercício 6: Calculadora de idade em dias
+Crie uma classe chamada CalculadoraIdadeDias que receba a data de nascimento de uma pessoa e forneça um método para calcular a idade atual em dias.
+
+Exercício 7: Agendador de tarefas
+Crie uma classe chamada AgendadorTarefas que permita agendar tarefas para datas e horários específicos. A classe deve fornecer métodos para adicionar tarefas, listar as tarefas agendadas e executar as tarefas que estão no momento agendado.
+
+Exercício 8: Verificador de aniversário próximo
+Crie uma classe chamada VerificadorAniversario que receba a data de nascimento de uma pessoa e forneça um método para verificar se o aniversário está próximo (por exemplo, nos próximos 30 dias). A classe também deve fornecer um método para calcular a quantidade de dias restantes até o próximo aniversário.
+
+Exercício 9: Calculadora de tempo decorrido
+Crie uma função chamada calcula_tempo_decorrido que receba duas datas e horas como argumento e retorne o tempo decorrido entre elas, expresso em anos, meses, dias, horas, minutos e segundos.
+
+Exercício 10: Contador regressivo para o ano novo
+Crie uma classe chamada ContadorRegressivoAnoNovo que inicie um contador regressivo para o próximo ano novo. A classe deve fornecer um método para exibir o tempo restante até a virada do ano, atualizado a cada segundo.
