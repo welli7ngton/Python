@@ -7,29 +7,19 @@ from pytz import timezone
 from datetime import datetime
 
 
-def converte_fuso_horario(dia,
-                          mes,
-                          ano,
+def converte_fuso_horario(data,
                           hora,
-                          minut,
-                          seg,
                           fuso_horario_origem,
                           fuso_horario_destino
                           ):
-    fuso = timezone(fuso_horario_destino)
-    data_formatada = datetime(day=dia,
-                              month=mes,
-                              year=ano,
-                              hour=hora,
-                              minute=minut,
-                              second=seg,
-                              tzinfo=fuso
-                              )
-    print(data_formatada)
+    data_origem = datetime.strptime(data + "-" + hora, "%d/%m/%Y-%H:%M:%S")
+
+    return data_origem.astimezone(timezone(fuso_horario_destino))
+
 
 if __name__ == "__main__":
-    h = converte_fuso_horario(5, 5, 2023,
-                              20, 4, 43,
+    h = converte_fuso_horario("05/05/2023",
+                              "21:8:43",
                               "America/Fortaleza",
                               "Asia/Tokyo")
 
