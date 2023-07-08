@@ -20,10 +20,14 @@ def verifica_horario_expediente(data, hora):
         print("Dia não é útil.")
         return False
     print("O dia é útil.")
+    if data_.hour < 9 or data_.hour > 18:
+        print("Horario não é de trabalho.")
+        return False
+    print("Horario é de trabalho.")
     return True
 
 
 if __name__ == "__main__":
 
     # print(calendar.monthcalendar(2023, 12))
-    verifica_horario_expediente("26/12/2023", "07:57")
+    verifica_horario_expediente("26/12/2023", "09:57")
