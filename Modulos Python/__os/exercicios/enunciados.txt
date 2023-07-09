@@ -1,0 +1,20 @@
+1- Crie um programa que liste todos os arquivos em um diretório especificado pelo usuário.
+2- Escreva um script que crie uma nova pasta chamada "Backup" e copie todos os arquivos de um diretório específico para essa pasta.
+3- Crie um programa que verifique se um arquivo existe em um diretório específico.
+4- Escreva um script que renomeie todos os arquivos de um diretório para adicionar um prefixo ao nome do arquivo.
+5- Crie um programa que liste todos os subdiretórios em um diretório especificado.
+6- Escreva um script que crie uma estrutura de diretórios específica com base em uma lista de nomes de pastas fornecida pelo usuário.
+7- Crie um programa que liste todos os arquivos de um diretório e seus subdiretórios, exibindo o caminho completo de cada arquivo.
+8- Escreva um script que exclua todos os arquivos em um diretório específico, mantendo os diretórios intactos.
+9- Crie um programa que copie todos os arquivos de um diretório para outro diretório especificado pelo usuário.
+10 -Escreva um script que mova todos os arquivos de um diretório para outro diretório, excluindo o diretório de origem.
+11- Crie um programa que conte o número total de arquivos em um diretório e seus subdiretórios.
+12- Escreva um script que calcule o tamanho total ocupado por todos os arquivos em um diretório específico.
+13- Crie um programa que liste os arquivos em um diretório por ordem de tamanho, do maior para o menor.
+14- Escreva um script que encontre todos os arquivos com uma determinada extensão em um diretório e os mova para uma nova pasta.
+15- Crie um programa que renomeie todos os arquivos em um diretório para substituir espaços em branco por underscores.
+16- screva um script que copie um arquivo para várias pastas diferentes.
+17- Crie um programa que liste os cinco arquivos mais recentes em um diretório.
+18- Escreva um script que exclua todos os arquivos em um diretório que tenham uma determinada extensão.
+19- Crie um programa que verifique se um diretório está vazio.
+20- Escreva um script que renomeie todos os arquivos em um diretório para adicionar um número sequencial ao nome do arquivo.
