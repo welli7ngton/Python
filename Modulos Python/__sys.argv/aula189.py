@@ -18,23 +18,3 @@ parser.add_argument("-b",
                     )
 
 args = parser.parse_args()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
