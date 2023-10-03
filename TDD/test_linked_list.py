@@ -1,4 +1,9 @@
 # flake8: noqa
+"""
+Lista Encadeada
+
+Crie uma classe que represente uma lista encadeada. Escreva testes para adicionar, remover e pesquisar elementos na lista.
+"""
 import unittest
 from linked_list import LinkedList
 
