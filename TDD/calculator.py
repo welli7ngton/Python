@@ -1,15 +1,21 @@
 class Calculator:
-    def sum(x: int | float, y: int | float) -> int | float:
-        return x + y
+    def __init__(self, x: int | float, y: int | float) -> None:
+        assert isinstance(x, (int, float)), 'x shold be an int or float'
+        assert isinstance(y, (int, float)), 'y shold be an int or float'
+        self.x = x
+        self.y = y
 
-    def sub(x: int | float, y: int | float) -> int | float:
-        return x - y
+    def sum(self) -> int | float:
+        return self.x + self.y
 
-    def mult(x: int | float, y: int | float) -> int | float:
-        return x * y
+    def sub(self) -> int | float:
+        return self.x - self.y
 
-    def division(x: int | float, y: int | float) -> int | float:
+    def mult(self) -> int | float:
+        return self.x * self.y
+
+    def division(self) -> int | float:
         try:
-            return x // y
+            return self.x // self.y
         except ZeroDivisionError:
-            return '0DivisionError'
+            raise Exception('0DivisionError')
