@@ -9,3 +9,15 @@ class LinkedList(list):
 
     def length(self):
         return len(self)
+
+    def get_this(self, index: int):
+        return self[index]
+
+    def delete_this(self, index: int):
+        if self[index]:
+            self.pop(index)
+            return True
+        return False
+
+if __name__ == '__main__':
+    ...
