@@ -54,10 +54,13 @@ class TestLoginInteface(unittest.TestCase):
             LoginInterface.create_user('Foo', 'StrongPassword#3', 'StrongPassword#3')
             LoginInterface.change_password('Foo', 'otherStr0n6P4$$', 'nE3WStrongPassword#3')
         self.assertEqual(ex.exception.args[0], 'Password error: user and old password dont match.')
+    
+    def test_checking_the_strength_of_the_new_password_getting_an_weak_password_error(self):
+        with self.assertRaises(Exception) as ex:
+            LoginInterface.create_user('foo', 'StrongPassword#3', 'StrongPassword#3')
+            LoginInterface.change_password('foo', 'StrongPassword#3', 'weakpasswd')
+        self.assertEqual(ex.exception.args[0], 'Password error: password too weak.')
 
-
-        
-    # TODO: change password tests
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
