@@ -3,6 +3,7 @@ import string
 
 
 class LoginInterface:
+    # this list could be a jason file to save the results of the registers
     _registered_users = []
 
     @classmethod
@@ -71,6 +72,8 @@ class LoginInterface:
         assert __class__._check_if_passwd_has_numerical_characters(passwd), 'Password error: missing any numerical character.'
         assert __class__._check_uppercase_characters_existence(passwd), 'Password error: missing any uppercase character.'
 
+        # as the objective of this exercices arent create a real login interface
+        # but only its tests, ill use this simple dictionare as database to save some user datas
         user = {
             'username': username,
             'password': passwd,
@@ -84,6 +87,12 @@ class LoginInterface:
         assert __class__._check_if_username_exists_in__registered_users_of_this_class(user), 'User error: not found.'
         assert __class__._check_if_user_match_with_the_password(user, passwd), 'Password error: user and old password dont match.'
         _user = dict([u for u in __class__._registered_users if u['username'] == user])
+        assert (
+            __class__._check_if_passwd_has_any_special_characters(new_passwd) and
+            __class__._check_if_passwd_has_numerical_characters(new_passwd) and
+            __class__._check_if_password_is_common(new_passwd) and
+            len(passwd) >= 8
+            ), 'Password error: password too weak.'
 
         _user['password'] = new_passwd
         return True
