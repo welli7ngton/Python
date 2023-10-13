@@ -34,6 +34,11 @@ class TestToDoList(unittest.TestCase):
     
     def test_creating_a_dictionare_for_each_event(self):
         self.assertTrue(isinstance(ToDoList._add_event('event test', '11/11/1111', '00:00', 'a test event'), dict))
+    
+    def test_remve_item_of_the_list(self):
+        tdl = ToDoList()
+        tdl.add_event('Event Test', '13/10/2023', '15:12')
+        self.assertTrue(tdl.remove_event('13/10/2023', '15:12'))
 
 
 if __name__ == '__main__':
