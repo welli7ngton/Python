@@ -6,7 +6,7 @@ class ToDoList:
     DEFAULT_DATE_FORMAT = '%d/%m/%Y'
 
     def __init__(self) -> None:
-        self.MY_EVENTS = {}
+        self.MY_EVENTS: dict = {}
 
     @classmethod
     def _converting_str_to_date(cls, date: str):
@@ -31,12 +31,12 @@ class ToDoList:
 
     def add_event(self, title: str, date: str, time: str, description: str | None = None):
        self.MY_EVENTS[(date + '|' + time)] = __class__._add_event(title, date, time, description)
+    
+    def remove_event(self, date: str, time: str):
+        self.MY_EVENTS.pop(f'{date}|{time}')
+        return True
         
 
 
 if __name__ == '__main__':
-    a = ToDoList()
-
-    a.add_event('teste', '09/10/2023', '00:00', 'sem descrição')
-
-    print(a.MY_EVENTS)
+    ...
