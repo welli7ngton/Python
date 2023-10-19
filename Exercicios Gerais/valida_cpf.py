@@ -29,7 +29,7 @@ cpf = cpf[:9]
 
 somas = 0
 mult = 10
-for a in range(0,9):
+for a in range(0, 9):
     somas += int(cpf[a]) * mult
     mult -= 1
 
@@ -47,7 +47,6 @@ mult = 11
 somas2 = 0
 
 for digito in cpf:
-    
     somas2 += int(digito) * mult
     mult -= 1
 

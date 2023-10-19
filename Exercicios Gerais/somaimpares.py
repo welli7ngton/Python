@@ -16,11 +16,10 @@ for a in range(0, (intervalo - 1 )):
     if menor > maior or menor == maior:
         break
     else:
-        if menor %2 == 0:
-            soma += (menor + 1) 
-            menor +=1                          
+        if menor % 2 == 0:
+            soma += (menor + 1)
+            menor += 1
         else:
             menor += 1
-                        
-print(soma) 
 
+print(soma)

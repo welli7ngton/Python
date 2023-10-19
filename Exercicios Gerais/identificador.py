@@ -18,12 +18,12 @@ if d3 == (d1 + 4):
     r3 = True
 else:
     r3 = False
-    
+
 if d5 == (d3 + 2):
     r4 = True
 else:
     r4 = False
-  
+
 if r1 == True and r2 == True and r3 == True and r4 == True:
     print("SIM")
 else:

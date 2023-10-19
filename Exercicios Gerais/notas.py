@@ -7,7 +7,6 @@ nota2 = float(input("digite a segunda nota: "))
 if nota2 < 0 or nota2 > 10:
     while nota2 < 0 or nota2 > 10:
         nota2 = float(input("nota invalida, tnte novamente: "))
-    
+
 media = (nota1 + nota2)/2
 print(f"sua média é: {media:.2f}")
-    

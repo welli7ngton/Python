@@ -5,4 +5,3 @@ for a in range(0, 10):
     print(num)
     num = termo + razao
     termo += razao
-    

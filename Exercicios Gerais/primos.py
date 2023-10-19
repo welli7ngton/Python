@@ -8,4 +8,3 @@ if primo > 2:
     print(f"{num} não é primo")
 else:
     print(f"{num} é primo")
-

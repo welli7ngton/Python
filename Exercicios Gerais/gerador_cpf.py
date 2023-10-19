@@ -51,4 +51,3 @@ cpf += str(soma % 11)
 
 print(cpf)
 print(len(cpf))
-

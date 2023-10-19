@@ -19,13 +19,7 @@ if num1 % 2 == 0:
         if num3 % 2 != 0:
             soma = 0
             print('{} é um número par e a soma dos números pares dar {}'.format(num1, soma))
-                
-                
-                
-                
-                
-                
-                
+
 elif num1 % 2 != 0:
     num2 = int(input())
     num3 = int(input())

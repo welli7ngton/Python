@@ -4,11 +4,11 @@ O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O L
 
 frase = frase.lower().replace(" ", "")
 
-i = 0 
+i = 0
 qtd = 0
 
 while i < len(frase):
-    
+
     cont =  frase.count(frase[i])
     if cont > qtd:
         qtd = cont

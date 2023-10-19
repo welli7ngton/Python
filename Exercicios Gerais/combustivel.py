@@ -19,4 +19,3 @@ print("muito obrigado")
 print(f"alcool: {alcool}")
 print(f"gasolina: {gasolina}")
 print(f"diesel: {diesel}")
-

@@ -14,7 +14,4 @@ class Pessoa:
     def muda_endereco(self):
         novo_endereco = input("digite seu novo endereço: ")
         self.endereco = novo_endereco
-        
         return
-
-
