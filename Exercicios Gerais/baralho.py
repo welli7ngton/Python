@@ -1,6 +1,18 @@
 # Exercicio Baralho OBI
 # https://olimpiada.ic.unicamp.br/pratique/ps/2021/f1/baralho/
 
+
+def test(n1: int, n2: int):
+    """
+    funcao teste 1234
+
+    """
+    return n1 + n2
+
+
+test(1, 2)
+
+
 dados = input()
 
 P = [0 for x in range(13)]
@@ -10,7 +22,7 @@ E = [0 for x in range(13)]
 
 
 for a in range(0, len(dados), 3):
-    conjunto = dados[a:a+3]
+    conjunto = dados[a : a + 3]
     for i in range(0, len(conjunto)):
         num = conjunto[:2]
         numint = int(num)

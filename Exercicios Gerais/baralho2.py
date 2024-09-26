@@ -1,5 +1,6 @@
 # https://olimpiada.ic.unicamp.br/pratique/ps/2021/f1/baralho/
 
+
 def divide_naipes(lista_dados):
     C = [dado for dado in lista_dados if "C" in dado]
     E = [dado for dado in lista_dados if "E" in dado]
@@ -33,7 +34,7 @@ dados = input()
 lista_dados = []
 
 for i in range(0, len(dados), 3):
-    lista_dados.append(dados[i:i+3])
+    lista_dados.append(dados[i : i + 3])
 
 cartasC, cartasE, cartasU, cartasP = divide_naipes(lista_dados)
 
@@ -41,3 +42,4 @@ print(retorna_falta(cartasC))
 print(retorna_falta(cartasE))
 print(retorna_falta(cartasU))
 print(retorna_falta(cartasP))
+

@@ -12,16 +12,16 @@ class CalculateGrades:
 
     def get_result(self, n1, n2) -> str:
         if (n1 + n2) / 2 >= 6:
-            print('Approved.')
+            print("Approved.")
             return
 
         if (n1 + n2) / 2 < 6 and (n1 + n2) / 2 >= 4:
-            print('Supplemental Verification.')
+            print("Supplemental Verification.")
             return
 
-        print('Disapproved.')
+        print("Disapproved.")
         return
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     CalculateGrades(10, 10)
