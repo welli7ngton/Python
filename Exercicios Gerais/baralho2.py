@@ -38,8 +38,5 @@ for i in range(0, len(dados), 3):
 
 cartasC, cartasE, cartasU, cartasP = divide_naipes(lista_dados)
 
-print(retorna_falta(cartasC))
-print(retorna_falta(cartasE))
-print(retorna_falta(cartasU))
-print(retorna_falta(cartasP))
+print(f"{retorna_falta(cartasC)}\n{retorna_falta(cartasE)}\n{retorna_falta(cartasU)}\n{retorna_falta(cartasP)}")
 
